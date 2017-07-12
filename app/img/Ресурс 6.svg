@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000">
+    <defs>
+        <style>
+            .cls-1cm{fill:url(#Безымянный_градиент_36);}.cls-2cm{fill:url(#Безымянный_градиент_37);}.cls-3cm{fill:url(#Безымянный_градиент_38);}.cls-4cm{fill:#fff;}
+        </style>
+        <linearGradient id="Безымянный_градиент_36" x1="2537.39" y1="-5992.86" x2="2518.13" y2="-5947.47"
+                        gradientTransform="matrix(28.57, 0, 0, -28.57, -71080, -169722.9)"
+                        gradientUnits="userSpaceOnUse">
+            <stop offset="0.17" stop-color="#ff1f51"/>
+            <stop offset="0.28" stop-color="#ff3648"/>
+            <stop offset="0.47" stop-color="#ff593b"/>
+            <stop offset="0.65" stop-color="#ff7231"/>
+            <stop offset="0.81" stop-color="#ff812b"/>
+            <stop offset="0.94" stop-color="#ff8629"/>
+        </linearGradient>
+        <linearGradient id="Безымянный_градиент_37" x1="2521.07" y1="-5953.19" x2="2512.91" y2="-5973.74"
+                        gradientTransform="matrix(28.57, 0, 0, -28.57, -71080, -169722.9)"
+                        gradientUnits="userSpaceOnUse">
+            <stop offset="0.02" stop-color="#9039d0"/>
+            <stop offset="0.63" stop-color="#ff1f51"/>
+        </linearGradient>
+        <linearGradient id="Безымянный_градиент_38" x1="2488.12" y1="-5951.5" x2="2533.11" y2="-6008.7"
+                        gradientTransform="matrix(28.57, 0, 0, -28.57, -71080, -169722.9)"
+                        gradientUnits="userSpaceOnUse">
+            <stop offset="0.11" stop-color="#9039d0"/>
+            <stop offset="0.39" stop-color="#ff1f51"/>
+            <stop offset="0.63" stop-color="#ff1f51"/>
+            <stop offset="0.66" stop-color="#ff3648"/>
+            <stop offset="0.71" stop-color="#ff593b"/>
+            <stop offset="0.77" stop-color="#ff7231"/>
+            <stop offset="0.81" stop-color="#ff812b"/>
+            <stop offset="0.85" stop-color="#ff8629"/>
+        </linearGradient>
+    </defs>
+    <title>Ресурс 6</title>
+    <g id="Слой_2" data-name="Слой 2">
+        <g id="youtrack">
+            <path class="cls-1cm"
+                  d="M1662.86,0,1091.43,205.71,640,0,197.14,1111.43,705.71,908.57l-8.57,562.86,1088.57,20L2000,391.43Z"/>
+            <path class="cls-2cm" d="M1451.43,648.57l-720-471.43-580,357.14,1271.43,491.43Z"/>
+            <path class="cls-3cm"
+                  d="M831.43,1948.57l748.57-100-237.14-457.14L1500,1200l17.14-117.14L731.43,174.29,0,354.29V1402.86L422.86,2000l408.57-51.43Z"/>
+            <path d="M382.86,382.86H1617.14V1617.14H382.86Z"/>
+            <path class="cls-4cm"
+                  d="M474,804c0-142.32,106.56-258.9,258.18-258.9,92.26,0,148,32.18,196,78l-56.5,65.08c-40.05-37.19-83-62.22-140.18-62.22-95.83,0-165.21,78.67-165.21,178.08,0,98,69.37,178.08,165.21,178.08,61.51,0,100.84-25,143.75-65.08l56.5,57.21c-52.21,54.35-109.42,88.68-203.11,88.68C582.74,1062.87,474,949.15,474,804Z"/>
+            <path class="cls-4cm"
+                  d="M1024,553.66h93.69L1270,790.38l152.33-236.72H1516v500.63h-88v-359L1270,931.27h-2.86L1110.53,696.7v357.59H1024Z"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000">
+    <defs>
+        <style>
+            .cls-1{fill:url(#Безымянный_градиент_36);}.cls-2{fill:url(#Безымянный_градиент_37);}.cls-3{fill:url(#Безымянный_градиент_38);}.cls-4{font-size:715.17px;fill:#fff;font-family:GothamPro-Medium,
+            Gotham Pro;}
+        </style>
+        <linearGradient id="Безымянный_градиент_36" x1="2537.39" y1="-5992.86" x2="2518.13" y2="-5947.47"
+                        gradientTransform="matrix(28.57, 0, 0, -28.57, -71080, -169722.9)"
+                        gradientUnits="userSpaceOnUse">
+            <stop offset="0.17" stop-color="#ff1f51"/>
+            <stop offset="0.28" stop-color="#ff3648"/>
+            <stop offset="0.47" stop-color="#ff593b"/>
+            <stop offset="0.65" stop-color="#ff7231"/>
+            <stop offset="0.81" stop-color="#ff812b"/>
+            <stop offset="0.94" stop-color="#ff8629"/>
+        </linearGradient>
+        <linearGradient id="Безымянный_градиент_37" x1="2521.07" y1="-5953.19" x2="2512.91" y2="-5973.74"
+                        gradientTransform="matrix(28.57, 0, 0, -28.57, -71080, -169722.9)"
+                        gradientUnits="userSpaceOnUse">
+            <stop offset="0.02" stop-color="#9039d0"/>
+            <stop offset="0.63" stop-color="#ff1f51"/>
+        </linearGradient>
+        <linearGradient id="Безымянный_градиент_38" x1="2488.12" y1="-5951.5" x2="2533.11" y2="-6008.7"
+                        gradientTransform="matrix(28.57, 0, 0, -28.57, -71080, -169722.9)"
+                        gradientUnits="userSpaceOnUse">
+            <stop offset="0.11" stop-color="#9039d0"/>
+            <stop offset="0.39" stop-color="#ff1f51"/>
+            <stop offset="0.63" stop-color="#ff1f51"/>
+            <stop offset="0.66" stop-color="#ff3648"/>
+            <stop offset="0.71" stop-color="#ff593b"/>
+            <stop offset="0.77" stop-color="#ff7231"/>
+            <stop offset="0.81" stop-color="#ff812b"/>
+            <stop offset="0.85" stop-color="#ff8629"/>
+        </linearGradient>
+    </defs>
+    <title>Ресурс 2</title>
+    <g id="Слой_2" data-name="Слой 2">
+        <g id="youtrack">
+            <path class="cls-1"
+                  d="M1662.86,0,1091.43,205.71,640,0,197.14,1111.43,705.71,908.57l-8.57,562.86,1088.57,20L2000,391.43Z"/>
+            <path class="cls-2" d="M1451.43,648.57l-720-471.43-580,357.14,1271.43,491.43Z"/>
+            <path class="cls-3"
+                  d="M831.43,1948.57l748.57-100-237.14-457.14L1500,1200l17.14-117.14L731.43,174.29,0,354.29V1402.86L422.86,2000l408.57-51.43Z"/>
+            <path d="M382.86,382.86H1617.14V1617.14H382.86Z"/>
+            <text class="cls-4" transform="translate(431.84 1054.29)">CM</text>
+        </g>
+    </g>
+</svg>
