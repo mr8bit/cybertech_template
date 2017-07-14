@@ -1,7 +1,7 @@
 var renderer, scene, camera, ww, wh, particles;
 
 ww = Math.round( document.documentElement.clientWidth) ,
-    wh = Math.round( document.documentElement.clientHeight/1.618 );
+    wh = Math.round( document.documentElement.clientHeight );
 console.log(document.documentElement.clientHeight)
 var centerVector = new THREE.Vector3(0, 0, 0);
 var previousTime = 0;
