@@ -342,10 +342,15 @@ body
     font-size: 40px
     width: 560px
     line-height: 45px
+  &-description
+    margin-top: 10px
+    font-size: 16px
+    color: $black
+    font-weight: 300
   &-companys
     display: flex
     width: 100%
-    margin-top: 60px
+    margin-top: 40px
     justify-content: space-between
     flex-wrap: wrap
     align-items: center
@@ -397,30 +402,26 @@ body
   color: #0093EE
   text-decoration: none
 
-
-
-
 .black
-    position: relative
-    z-index: 100
-    background-color: #161616
-    .navigation
-      display: flex
-      height: 70px
-      flex-direction: row
-      justify-content: space-between
-      align-items: center
-      .cls-2trust2
-        fill: white
-      &-bar
-        ul
-          li
-            a
-              color: white
-    &-menu
-      color: white
-      display: none
-
+  position: relative
+  z-index: 100
+  background-color: #161616
+  .navigation
+    display: flex
+    height: 70px
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    .cls-2trust2
+      fill: white
+    &-bar
+      ul
+        li
+          a
+            color: white
+  &-menu
+    color: white
+    display: none
 
 .navigation2
   display: flex
@@ -447,6 +448,7 @@ body
         color: $black
       .active
         font-weight: bold
+
 .our-office
   position: relative
   padding: 60px 0
@@ -668,7 +670,6 @@ body
         a
           color: #0093EE
 
-
 .input-form
   .input-send
     float: right
@@ -726,13 +727,10 @@ body
       &:focus
         outline: none
 
-
-
 .vacancy
   background-color: $black
   padding: 90px 0
   height: 450px
-
 
   &-svgbox
     z-index: 0
@@ -801,6 +799,94 @@ body
             background-color: white
             border: 1px solid #CCCBCB
 
+
+
+.about
+  background-color: $black
+  padding: 40px 0
+  height: 940px
+  &-svgbox
+    margin: 0 auto
+    width: 940px
+    margin-top: -396px
+  &-info
+    position: absolute
+    width: 1170px
+    display: flex
+    height: 100%
+    flex-direction: column
+    align-content: space-between
+    &-tagline
+      &-main
+        width: 50%
+        height: 50%
+        &-title
+          font-size: 60px
+          color: white
+          width: 90%
+          line-height: 65px
+          padding: 0
+          margin: 0
+          font-weight: 500
+        &-description
+          margin-top: 30px
+          line-height: 24px
+          font-size: 20px
+          color: white
+
+      &-second
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &-left
+          width: 40%
+          &-title
+            font-size: 36px
+            color: white
+            font-weight: 500
+            line-height: 40px
+          &-description
+            font-size: 20px
+            line-height: 26px
+            font-weight: 300
+            color: white
+        &-right
+          width: 50%
+          &-description
+            color: white
+            font-size: 16px
+            line-height: 24px
+  &-today
+    width: 100%
+    &-title
+      font-size: 30px
+      font-weight: 500
+      color: $black
+    &-list
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      &-item
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 25%
+        &-icon
+          line-height: 125px
+          color: $black
+          font-size: 125px
+        &-value
+          margin-top: 10px
+          color: $black
+          line-height: 80px
+          font-size: 70px
+        &-title
+          margin-top: 5px
+          width: 50%
+          line-height: 20px
+          color: $black
+          font-size: 14px
 
 @import "media"
 // Всегда в конце
