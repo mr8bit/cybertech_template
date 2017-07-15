@@ -110,6 +110,8 @@ body
 .navigation
   display: flex
   height: 70px
+  position: relative
+  z-index: 100
   flex-direction: row
   justify-content: space-between
   align-items: center
@@ -125,7 +127,11 @@ body
           color: #161616
           font-size: 14px
           font-weight: 500
+          transition: color 0.3s
           text-transform: uppercase
+          &:hover
+            text-decoration: none
+            color: #0093EE
 
     &-menu
       display: none
@@ -395,6 +401,8 @@ body
 
 
 .black
+    position: relative
+    z-index: 100
     background-color: #161616
     .navigation
       display: flex
@@ -417,9 +425,12 @@ body
 .navigation2
   display: flex
   height: 70px
+  background-color: white
   flex-direction: row
   justify-content: space-between
   align-items: center
+  position: relative
+  z-index: 100
   &-brand
     color: $black
     font-size: 20px
@@ -598,6 +609,83 @@ body
       background-color: #0093EE
       border-color: #0093EE
       text-decoration: none
+
+
+
+
+.vacancy
+  background-color: $black
+  padding: 90px 0
+  height: 450px
+
+
+  &-svgbox
+    z-index: 0
+    margin-top: -280px
+    position: relative
+  &-info
+    margin-top: 0
+    width: 45%
+    position: absolute
+    z-index: 13
+    &-title
+      font-size: 60px
+      font-weight: 500
+      color: white
+    &-description
+      margin-top: 15px
+      line-height: 20px
+      color: white
+
+  &-search
+    background-color: white
+    z-index: 90
+    padding-top: 30px
+    padding-bottom: 90px
+    position: relative
+    &-title
+      margin-top: 0
+      font-size: 30px
+      color: $black
+      font-weight: 500
+      padding: 0
+    &-list
+      display: flex
+      align-items: flex-start
+      justify-content: space-between
+      flex-wrap: wrap
+      &-item
+        width: 40%
+        &-title
+          font-weight: 500
+          color: $black
+          font-size: 24px
+        &-type
+          color: $black
+          opacity: 0.8
+          padding: 5px 0
+          font-size: 14px
+          font-weight: 500
+        &-description
+          font-size: 16px
+          color: $black
+          margin-bottom: 15px
+          line-height: 25px
+        &-answer
+          padding: 10px 20px
+          font-size: 12px
+          color: white
+          background-color: #0093EE
+          border-radius: 30px
+          border: 1px solid #0093EE
+          text-transform: uppercase
+          transition: color 0.3s, background-color 0.3s, border 0.3s
+          &:hover
+            color: #0093EE
+            text-decoration: none
+            background-color: white
+            border: 1px solid #CCCBCB
+
 
 @import "media"
 // Всегда в конце

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="3926 -269.2 1120 747.664">
+  <defs>
+    <style>
+      .vacancy-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .vacancy-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .vacancy-3 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .vacancy-4 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .vacancy-5 {
+        fill: url(#linear-gradient-5);
+      }
+    </style>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fb5502"/>
+      <stop offset="1" stop-color="#fff036"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fb5502"/>
+      <stop offset="1" stop-color="#fb2046"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e32581"/>
+      <stop offset="1" stop-color="#fb2046"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5e2495"/>
+      <stop offset="1" stop-color="#e32581"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="1" stop-color="#5e2495"/>
+      <stop offset="1" stop-color="#e32581"/>
+    </linearGradient>
+  </defs>
+  <g id="Монтажная_область_1" data-name="Монтажная область 1" transform="translate(3773.988 -269.284)">
+    <path id="Path_11" data-name="Path 11" class="vacancy-1" d="M1482.859,128.9a21.006,21.006,0,0,0-21.207,6.716c-1.733,1.108-548.264,462.7-549.65,464.227a45.867,45.867,0,0,0-10.6,10.732,50.032,50.032,0,0,0,77.828,62.728c1.594-1.385,509.869-504.869,511.117-506.461a21.252,21.252,0,0,0,8.109-11.978A21.6,21.6,0,0,0,1482.859,128.9Z" transform="translate(-227.051 -39.426)"/>
+    <path id="Path_12" data-name="Path 12" class="vacancy-2" d="M1241.623,645.451a37.762,37.762,0,0,0-26.544,1.592c-1.386.485-286.572,102.954-288.027,103.577a50.036,50.036,0,1,0,28.623,95.892,48.014,48.014,0,0,0,8.732-3.531c1.247-.485,277.7-123.863,279.156-124.625a38.43,38.43,0,0,0-1.94-72.905Z" transform="translate(-226.924 -198.023)"/>
+    <path id="Path_13" data-name="Path 13" class="vacancy-3" d="M1168.386,515.893C1165.891,513.747,752.84,233.618,750,231.887a69.873,69.873,0,1,0-70.62,118.74c2.98,1.731,457.337,235.679,461.7,236.925a38.428,38.428,0,0,0,27.306-71.659Z" transform="translate(-148.489 -66.457)"/>
+    <path id="Path_14" data-name="Path 14" class="vacancy-4" d="M771.205,261.516A69.9,69.9,0,0,0,640.221,310.4c.624,1.385,118.371,446.641,119.9,451.626a75.3,75.3,0,0,0,144.5-42.234C903.437,715.5,773.215,266.986,771.205,261.516Z" transform="translate(-148.489 -66.453)"/>
+    <path id="Path_15" data-name="Path 15" class="vacancy-5" d="M388.192,58.461A127.9,127.9,0,0,0,270.444.51C199.823,5.98,146.806,67.669,152.419,138.359a127.334,127.334,0,0,0,30.563,73.529c2.495,2.839,444.724,511.446,447.842,514.562a75.241,75.241,0,0,0,115.183-95.476C744.483,628.411,390.687,62.2,388.192,58.461Z" transform="translate(0 0)"/>
+  </g>
+</svg>
