@@ -434,10 +434,6 @@
     </div>
 </div>
 
-
-
-
-
 <div class="container">
     <div class="landing-order">
         <h3 class="landing-order-title">
@@ -496,6 +492,67 @@
     </div>
 </div>
 
+<div class="container">
+    <div class="landing-template">
+        <div class="landing-template-head">
+            <div class="landing-template-head-title">
+                <h4>Или выберите из готового</h4>
+                <div class="landing-template-head-title-help">Выберите решение, которое Вам нравится визуально.<br>
+                    Цвета, картинки и тексты — легко поменять под Ваш род деятельности.
+                </div>
+            </div>
+            <div class="landing-template-head-price">
+                2 499 руб
+            </div>
+        </div>
+        <div class="landing-template-body">
+            <div class="landing-template-body-sidebar">
+                <ul class="mainmenu">
+                    <li>Деловые услуги</li>
+                    <li onclick="addClassByClick(this)">
+                        <span class="mdi mdi-chevron-right"></span>
+                        Строительство
+                        <ul class="submenu">
+                            <li>Ремонт и реставрация мебели</li>
+                            <li>Мебель корпусная, изготовление мебели</li>
+                            <li>Магазины мебели и предметов интерьера</li>
+                        </ul>
+                    </li>
+                    <li onclick="addClassByClick(this)">
+                        <span class="mdi mdi-chevron-right"></span>
+                        Мебель
+                        <ul class="submenu">
+                            <li>Ремонт и реставрация мебели</li>
+                            <li>Мебель корпусная, изготовление мебели</li>
+                            <li>Магазины мебели и предметов интерьера</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="landing-template-body-content">
+
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function addClassByClick(button){
+        if ($(button).parent("ul").find('.active').length==1){
+
+            var c = $(button).children();
+
+
+            console.log( c)
+            $(button).parent("ul").find('.active')
+                .removeClass('active');
+
+         }
+        $(button).toggleClass("active");
+        $(button).children(".mdi").addClass("mdi-rotate-90");
+
+    }
+
+</script>
 <!--*******************Футер******************-->
 <footer>
     <div class="container">
@@ -547,6 +604,7 @@
 </footer>
 <link rel="stylesheet" href="css/main.min.css">
 <script src="js/scripts.min.js"></script>
+<script src="libs/jquery/dist/jquery.min.js"></script>
 
 </body>
 </html>
