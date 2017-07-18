@@ -36,7 +36,73 @@
 
 </head>
 
-<body>
+<body ng-app="landingApp">
+
+<div id="individual_order" class="landing-formOrder">
+    <div class="landing-formOrder-form">
+        <div class="landing-formOrder-form-head">
+
+            <div class="landing-formOrder-form-head-title">
+                Заказать Landing Page
+            </div>
+            <div class="landing-formOrder-form-head-description">
+                Оставьте ваши контактные данные и наш менеджер свяжется с вами, чтобы уточнить всю информацию по вашему проекту
+            </div>
+        </div>
+        <div class="landing-formOrder-form-body">
+            <div class="landing-formOrder-form-body-input-form">
+                <label>Как к вам обращаться?</label>
+                <input>
+            </div><div class="landing-formOrder-form-body-input-form">
+                <label>Ваш email</label>
+                <input>
+            </div><div class="landing-formOrder-form-body-input-form">
+                <label>Ваш телефон</label>
+                <input>
+            </div>
+            <div class="">
+
+            </div>
+            <input type="submit">
+            <button onclick="closeorderform()"><span class="mdi mdi-close"></span>
+            </button>
+        </div>
+
+    </div>
+</div>
+<div class="landing-formOrder" id="template_order">
+    <div class="landing-formOrder-form">
+        <div class="landing-formOrder-form-head">
+            <div class="landing-formOrder-form-head-title">
+                Заказать Landing Page
+            </div>
+            <div class="landing-formOrder-form-head-description">
+                 Вы выбрали шаблон <span style="font-weight: 500" id="template_name_id"></span>
+                Оставьте ваши контактные данные и наш менеджер свяжется с вами, чтобы уточнить всю информацию по вашему проекту
+            </div>
+        </div>
+        <div class="landing-formOrder-form-body">
+            <div class="landing-formOrder-form-body-input-form">
+                <label>Как к вам обращаться?</label>
+                <input>
+            </div><div class="landing-formOrder-form-body-input-form">
+                <label>Ваш email</label>
+                <input>
+            </div><div class="landing-formOrder-form-body-input-form">
+                <label>Ваш телефон</label>
+                <input>
+            </div>
+            <div class="">
+
+            </div>
+            <input type="submit">
+            <button onclick="closetemplateorder()"><span class="mdi mdi-close"></span>
+            </button>
+        </div>
+
+    </div>
+</div>
+
 <div class="container">
     <nav class="navigation">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 185.65 31.7" width="156">
@@ -81,14 +147,14 @@
                 Аналитический подход к конверсии<br>
                 с премиальным дизайном
             </h2>
-            <a href="#" class="landing-tagline-view">
+            <a href="#landing-service" class="landing-tagline-view">
                 Подробнее об услуге
             </a>
         </div>
     </div>
 </div>
 <div class="container">
-    <div class="landing-service">
+    <div  id="landing-service" class="landing-service">
         <div class="landing-service-tasks">
             <div class="landing-service-tasks-title">
                 Для каких задач подойдет landing page?
@@ -484,7 +550,7 @@
                 <div class="landing-order-works-checkout-price">
                     7 499 руб
                 </div>
-                <a class="landing-order-works-checkout-order">
+                <a onclick="showorderform()" href="" class="landing-order-works-checkout-order">
                     ЗАКАЗАТЬ
                 </a>
             </div>
@@ -493,7 +559,7 @@
 </div>
 
 <div class="container">
-    <div class="landing-template">
+    <div class="landing-template" ng-controller="TemplateListController">
         <div class="landing-template-head">
             <div class="landing-template-head-title">
                 <h4>Или выберите из готового</h4>
@@ -508,7 +574,39 @@
         <div class="landing-template-body">
             <div class="landing-template-body-sidebar">
                 <ul class="mainmenu">
-                    <li>Деловые услуги</li>
+
+
+                    <li onclick="addClassByClick(this)">
+                        <span class="mdi mdi-chevron-right"></span>
+                        Строительство
+                        <ul class="submenu">
+                            <li>Автоматические ворота, двери, рольставни
+                            </li>
+                            <li>Алмазная резка, алмазное бурение</li>
+                            <li>Башенные краны</li>
+                            <li>Бетон, раствор</li>
+                            <li>Буровые работы</li>
+                            <li>Быстровозводимые здания и сооружения</li>
+                            <li>Витражи</li>
+                            <li>Гидроизоляционные материалы </li>
+                            <li>Гидроизоляционные работы
+                            </li>
+                            <li>Гидротехническое строительство
+                            </li>
+                            <li>Грязепоглощающие покрытия
+                            </li>
+                            <li>ДСП, ДВП, Фанера</li>
+                        </ul>
+                    </li>
+                    <li onclick="addClassByClick(this)">
+                        <span class="mdi mdi-chevron-right"></span>
+                        Деловые услуги
+                        <ul class="submenu">
+                            <li>Ремонт и реставрация мебели</li>
+                            <li>Мебель корпусная, изготовление мебели</li>
+                            <li>Магазины мебели и предметов интерьера</li>
+                        </ul>
+                    </li>
                     <li onclick="addClassByClick(this)">
                         <span class="mdi mdi-chevron-right"></span>
                         Строительство
@@ -527,32 +625,63 @@
                             <li>Магазины мебели и предметов интерьера</li>
                         </ul>
                     </li>
+
+
+
                 </ul>
             </div>
             <div class="landing-template-body-content">
+                <div class="landing-template-body-content-list">
 
+
+                    <div ng-repeat="item in items | limitTo: paginationLimit() " class="animated fadeIn landing-template-body-content-list-item">
+                        <div class="landing-template-body-content-list-item-title">
+                            <div class="landing-template-body-content-list-item-title-name">
+                                {{item.name}}
+                            </div>
+                            <div class="landing-template-body-content-list-item-title-id">
+                                #{{item.identy}}
+                            </div>
+                        </div>
+                        <div class="landing-template-body-content-list-item-image">
+                            <img ng-src="   {{item.image}}">
+                            <div class="landing-template-body-content-list-item-image-description">
+                                <div class="landing-template-body-content-list-item-image-description-left">
+                                    <div class="landing-template-body-content-list-item-image-description-left-price">
+                                        2499 руб.
+                                    </div>
+                                    <div class="landing-template-body-content-list-item-image-description-left-phone">
+                                        Адаптивный <span class="mdi mdi-cellphone-iphone"></span>
+                                    </div>
+                                </div>
+                                <div class="landing-template-body-content-list-item-image-description-right">
+                                    <div class="landing-template-body-content-list-item-image-description-right-get">
+                                        <a onclick="showtemplteorder(this)" href="">Заказать</a>
+                                    </div>
+                                    <div class="landing-template-body-content-list-item-image-description-right-view">
+                                        <a href="{{item.url}}">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <button href="#"  ng-show="hasMoreItemsToShow()" ng-click="showMoreItems()"  style="width: 100%" class="landing-works-more">
+                        <span class="mdi mdi-cached"></span>
+                        <span class="landing-works-more-text">показать  ещё</span>
+                    </button>
+
+
+
+
+                </div>
             </div>
         </div>
     </div>
 </div>
-<script>
-    function addClassByClick(button){
-        if ($(button).parent("ul").find('.active').length==1){
 
-            var c = $(button).children();
-
-
-            console.log( c)
-            $(button).parent("ul").find('.active')
-                .removeClass('active');
-
-         }
-        $(button).toggleClass("active");
-        $(button).children(".mdi").addClass("mdi-rotate-90");
-
-    }
-
-</script>
 <!--*******************Футер******************-->
 <footer>
     <div class="container">
@@ -603,8 +732,216 @@
     </div>
 </footer>
 <link rel="stylesheet" href="css/main.min.css">
+<link rel="stylesheet" href="libs/animate.css/animate.min.css">
 <script src="js/scripts.min.js"></script>
 <script src="libs/jquery/dist/jquery.min.js"></script>
+<script>
+    function showtemplteorder(button) {
+         var id = $(button).parent().parent().parent().parent().parent().children().find(".landing-template-body-content-list-item-title-id").text();
+         var name = $(button).parent().parent().parent().parent().parent().children().find(".landing-template-body-content-list-item-title-name").text();
+        $("#template_order").addClass("show-form");
+        $("body").addClass("body-stop")
+        document.getElementById("template_name_id").innerHTML = id + " " + name;
+     }
+    function closetemplateorder() {
+        $("#template_order").removeClass("show-form")
+        $("body").removeClass("body-stop")
 
+    }
+
+    function showorderform() {
+        $("#individual_order").addClass("show-form")
+        $("body").addClass("body-stop")
+    }
+
+    function closeorderform() {
+        $("#individual_order").removeClass("show-form")
+        $("body").removeClass("body-stop")
+
+    }
+
+    function addClassByClick(button){
+        if ($(button).parent("ul").find('.active').length==1){
+            $(".mainmenu>li>span").removeClass("mdi-rotate-90");
+            $(button).parent("ul").find('.active')
+                .removeClass('active');
+        }
+        $(button).toggleClass("active");
+        $(button).children(".mdi").addClass("mdi-rotate-90");
+    }
+    $(document).ready(function() {
+        $(".landing-tagline-view").click(function() {
+            var elementClick = $(this).attr("href")
+            var destination = $(elementClick).offset().top;
+            jQuery("html:not(:animated),body:not(:animated)").animate({
+                scrollTop: destination
+            }, 800);
+            return false;
+        });
+    });
+
+
+
+</script>
+<script src="libs/angular/angular.min.js"></script>
+<script>
+    var target = document.querySelector('.landing-template-body-content-list-item');
+    var observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            console.log(mutation.type);
+        });
+    });
+
+    // создаем конфигурации для наблюдателя
+    var config = { attributes: true, childList: true, characterData: true };
+
+    // запускаем механизм наблюдения
+    observer.observe(target,  config);
+
+    var app = angular.module('landingApp', []);
+    app.controller("TemplateListController", function TemplateListController($scope) {
+
+        var pagesShown = 1;
+
+        var pageSize = 4;
+
+        $scope.paginationLimit = function(data) {
+            return pageSize * pagesShown;
+        };
+
+        $scope.hasMoreItemsToShow = function() {
+            return pagesShown < ($scope.items.length / pageSize);
+        };
+
+        $scope.showMoreItems = function() {
+            pagesShown = pagesShown + 1;
+        };
+
+
+        $scope.items = [
+            {
+                name: "Юридические услуги",
+                identy: "1499",
+                url: "#",
+                image: "img/6446_5.jpg"
+
+            },{
+                name: "Юридические услуги",
+                identy: "1499",
+                url: "#",
+                image: "img/6446_5.jpg"
+
+            },{
+                name: "Юридические услуги",
+                identy: "1499",
+                url: "#",
+                image: "img/6446_5.jpg"
+
+            },{
+                name: "Юридические услуги",
+                identy: "1499",
+                url: "#",
+                image: "img/6446_5.jpg"
+
+            },{
+                name: "Юридические услуги",
+                identy: "1499",
+                url: "#",
+                image: "img/6446_5.jpg"
+
+            },{
+                name: "Юридические услуги",
+                identy: "1499",
+                url: "#",
+                image: "img/6446_5.jpg"
+
+            },{
+                name: "Юридические услуги",
+                identy: "1499",
+                url: "#",
+                image: "img/6446_5.jpg"
+
+            },{
+                name: "Юридические услуги",
+                identy: "1499",
+                url: "#",
+                image: "img/6446_5.jpg"
+
+            },{
+                name: "Юридические услуги",
+                identy: "1499",
+                url: "#",
+                image: "img/6446_5.jpg"
+
+            },{
+                name: "Юридические услуги",
+                identy: "1499",
+                url: "#",
+                image: "img/6446_5.jpg"
+
+            },{
+                name: "Юридические услуги",
+                identy: "1499",
+                url: "#",
+                image: "img/6446_5.jpg"
+
+            },{
+                name: "Юридические услуги",
+                identy: "1499",
+                url: "#",
+                image: "img/6446_5.jpg"
+
+            },{
+                name: "Юридические услуги",
+                identy: "1499",
+                url: "#",
+                image: "img/6446_5.jpg"
+
+            },{
+                name: "Юридические услуги",
+                identy: "1499",
+                url: "#",
+                image: "img/6446_5.jpg"
+
+            },{
+                name: "Юридические услуги",
+                identy: "1499",
+                url: "#",
+                image: "img/6446_5.jpg"
+
+            },{
+                name: "Юридические услуги",
+                identy: "1499",
+                url: "#",
+                image: "img/6446_5.jpg"
+
+            },{
+                name: "Юридические услуги",
+                identy: "1499",
+                url: "#",
+                image: "img/6446_5.jpg"
+
+            },{
+                name: "Юридические услуги",
+                identy: "1499",
+                url: "#",
+                image: "img/6446_5.jpg"
+
+            },{
+                name: "Юридические услуги",
+                identy: "1499",
+                url: "#",
+                image: "img/6446_5.jpg"
+
+            },{
+                name: "Юридические услуги",
+                identy: "1499",
+                url: "#",
+                image: "img/6446_5.jpg"
+
+            },
+        ];
+    })
+</script>
 </body>
 </html>

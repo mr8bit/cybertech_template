@@ -81,6 +81,19 @@
           margin-top: 30px
           &-price
             font-size: 70px
+    &-template
+      &-head
+        flex-direction: column
+        &-title
+          margin-top: 10px
+          margin-bottom: 10px
+      &-body
+        flex-direction: column
+        &-sidebar
+          width: 100%
+        &-content
+          width: 100%
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 
@@ -178,10 +191,42 @@
           text-align: center
           &-price
             font-size: 60px
+    &-template
+      &-head
+        flex-direction: column
+        &-title
+          margin-top: 10px
+          margin-bottom: 10px
+          h4
+            line-height: 40px
+            margin-bottom: 20px
+        &-price
+          font-size: 60px
 
+      &-body
+        flex-direction: column
+        &-sidebar
+          width: 100%
+        &-content
+          width: 100%
+          &-list
+            &-item
+              width: 100%
+              height: 250px
+    &-formOrder-form
+      width: 100%
+      padding: 30px
+      &-head-description
+        margin-bottom: 15px
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
-  /**/
+
+  .landing
+    padding: 10px
+    height: calc(90vh - 60px)
+    &-formOrder-form
+      width: 100%
+      padding: 10px
 
 
 /*==========  Mobile First  ==========*/
