@@ -1,5 +1,5 @@
 # CyberTech
--- Главная :white_check_mark: (адаптивность :x:)
+-- Главная :white_check_mark: (адаптивность :x:) ( меню :x:)
 
 ---CyberLanding :x:
 
