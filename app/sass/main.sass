@@ -891,6 +891,7 @@ body
   width: 100%
   display: flex
   align-items: center
+  flex-wrap: wrap
   &-tagline
     h1
       font-size: 60px
@@ -1090,11 +1091,86 @@ body
               text-decoration: none
               background-color: white
               border: 1px solid #CCCBCB
+    &-more
+      display: flex
+      flex-direction: column
+      align-items: center
+      .mdi
+        font-size: 45px
+        line-height: 55px
+      &-text
+        font-size: 14px
+        letter-spacing: 2px
+        text-transform: uppercase
+      margin-top: 15px
+      padding: 20px 35px
+      font-size: 20px
+      color: #0093EE
+      background-color: white
+      border-radius: 30px
+      border: 1px solid #CCCBCB
+      text-transform: uppercase
+      transition: color 0.3s, background-color 0.3s, border 0.3s
+      &:hover
+        color: #0093EE
+        text-decoration: none
+        border: 1px solid #0093EE
+
   &-order
     &-title
       font-size: 36px
       font-weight: 500
       color: $black
+    &-works
+      display: flex
+      justify-content: space-between
+      align-items: flex-end
+      &-list
+        ul
+          padding: 0
+          margin: 0
+          li
+            display: block
+            font-size: 16px
+            color: $black
+            &:before
+              content: "-"
+      &-checkout
+        &-price
+          font-size: 72px
+          line-height: 78px
+          font-weight: bold
+          color: $black
+          margin-bottom: 30px
+        &-order
+          padding: 22px 62px
+          font-size: 26px
+          color: white
+          background-color: #0093EE
+          border-radius: 100px
+          border: 1px solid #0093EE
+          text-transform: uppercase
+          transition: color 0.3s, background-color 0.3s, border 0.3s
+          &:hover
+            color: #0093EE
+            text-decoration: none
+            background-color: white
+            border: 1px solid #CCCBCB
+
+  &-telegram
+    margin-top: 50px
+    background-color: #30A8DB
+    padding: 50px 0
+    &-row
+      align-items: center
+      display: flex
+      justify-content: space-between
+      &-text
+        padding-left: 50px
+        &-title
+          font-size: 36px
+          color: white
+          line-height: 43px
 
 
 @import "media"

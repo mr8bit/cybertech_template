@@ -18,16 +18,170 @@
     display: none
   .navigation-bar-menu
     display: block
+  .landing
+    &-service
+      flex-direction: column
+      &-tasks
+        width: 100%
+      &-answer
+        width: 100%
+        &-item
+          margin-top: 20px
+    &-develop
+      &-list
+        flex-direction: row
+        flex-wrap: wrap
+        &-item
+          margin-top: 20px
+          width: 50%
+    &-cycle
+      flex-wrap: wrap
+      img
+        display: block
+        max-width: 100%
+        height: auto
+      &-days
+        text-align: center
+        padding: 0
+        margin-bottom: 20px
+    &-telegram
+      &-row
+        flex-wrap: wrap
+        justify-content: center
+        &-text
+          margin-top: 30px
+          width: 90%
+          &-title
+            font-size: 24px
+            line-height: 34px
+    &-works
+      &-list
+        &-item
+          flex-direction: column
+          &:nth-child(2n)
+            flex-direction: column
+          &-img
+            height: 430px
+            width: 100%
+          &-description
+            width: 100%
+            &-list
+              width: 100%
+              margin-bottom: 15px
 
-
+              &-item
+                padding: 0
+    &-order
+      &-works
+        flex-direction: column
+        align-items: flex-start
+        &-list
+          width: 100%
+        &-checkout
+          margin-top: 30px
+          &-price
+            font-size: 70px
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
 
+  .landing
+    height: calc(90vh - 60px)
+
+    &-tagline
+      h1
+        font-size: 40px
+        line-height: 56px
+      h2
+        margin-top: 10px
+        font-size: 26px
+        line-height: 33px
+      &-view
+        font-size: 16px
+    &-service
+      flex-direction: column
+      &-tasks
+        margin-top: 0px
+        padding: 10px
+        width: 100%
+        height: 630px
+        &-title
+          font-size: 30px
+          line-height: 35px
+        &-description
+          padding: 30px 0
+        &-phone
+          font-size: 30px
+      &-answer
+        width: 100%
+        &-item
+          margin-top: 20px
+    &-develop
+      &-list
+        flex-direction: row
+        flex-wrap: wrap
+        &-item
+          margin-top: 20px
+          width: 100%
+          padding: 0
+    &-cycle
+      flex-wrap: wrap
+      img
+        display: block
+        max-width: 100%
+        height: auto
+      &-days
+        text-align: center
+        margin-bottom: 20px
+    &-telegram
+      &-row
+        text-align: center
+        flex-wrap: wrap
+        justify-content: center
+        &-icon
+          img
+            width: 50%
+        &-text
+          margin-top: 30px
+          padding-left: 0
+          width: 100%
+          &-title
+            font-size: 24px
+            line-height: 34px
+    &-works
+      &-list
+        &-item
+          flex-direction: column
+          &:nth-child(2n)
+            flex-direction: column
+          &-img
+            height: 430px
+            width: 100%
+          &-description
+            width: 100%
+            &-list
+              width: 100%
+              margin-bottom: 15px
+              flex-direction: column
+              &-item
+                padding: 0
+    &-order
+      &-title
+        line-height: 45px
+      &-works
+        flex-direction: column
+        align-items: flex-start
+        &-list
+          width: 100%
+        &-checkout
+          margin-top: 30px
+          width: 100%
+          text-align: center
+          &-price
+            font-size: 60px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
-	/**/
+  /**/
 
 
 /*==========  Mobile First  ==========*/
