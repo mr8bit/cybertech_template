@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-8881 -426.1 837.677 758.988">
+  <defs>
+    <style>
+      .projects-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .projects-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .projects-3 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .projects-4 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .projects-5 {
+        fill: url(#linear-gradient-5);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="-0.471" y1="-10.053" x2="-0.178" y2="-14.731" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b54ea0"/>
+      <stop offset="1" stop-color="#eb368d"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-1.285" y1="-3.3" x2="0.143" y2="-5.626" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b54ea0"/>
+      <stop offset="1" stop-color="#be4a9d"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="-1.924" y1="-3.34" x2="-1.02" y2="-2.554" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b54ea0"/>
+      <stop offset="1" stop-color="#029de0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="-0.958" y1="-2.128" x2="0.153" y2="-1.48" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#24bdc9"/>
+      <stop offset="1" stop-color="#029de0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="-0.263" y1="0.473" x2="0.612" y2="0.008" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#24bdc9"/>
+      <stop offset="1" stop-color="#22d88f"/>
+    </linearGradient>
+  </defs>
+  <g id="project" transform="translate(-8881 -426.1)">
+    <g id="beam-1">
+      <path id="Path_1443" data-name="Path 1443" class="projects-1" d="M544.91,873.412l206.044,29.5,24.421,7.843-16.7-28.2L583.133,836.25Z" transform="translate(-161.965 -248.561)"/>
+      <path id="Path_1444" data-name="Path 1444" class="projects-2" d="M483.97,863.055,674.026,1008.7l49.137-61.113L535.349,840.11Z" transform="translate(-143.852 -249.709)"/>
+      <path id="Path_1445" data-name="Path 1445" class="projects-3" d="M925.225,670.6,699.18,894.926l38.814,48.308,298.6-265.976-24.013-57.388Z" transform="translate(-207.819 -184.246)"/>
+      <path id="Path_1446" data-name="Path 1446" class="projects-4" d="M866.018,559.1l-8.9,100.1L103.376,882.225,95.35,752.164Z" transform="translate(-28.341 -166.183)"/>
+      <path id="Path_1447" data-name="Path 1447" class="projects-5" d="M557.547,45.891,743.183,0l85.59,193.359L75.034,716.042,0,609.636Z"/>
+    </g>
+  </g>
+</svg>
