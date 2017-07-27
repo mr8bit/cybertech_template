@@ -156,6 +156,87 @@
     </div>
 </div>
 
+
+<div class="container">
+    <div class="projects">
+        <div class="projects-list">
+            <div class="projects-list-item width-60">
+                <div class="projects-card ">
+                    <div class="drone">
+                        <div class="card drone">
+                            <div class="description">создание дрона перехватчика для Омского НИИ Приборостроения</div>
+                            <div class="title">
+                                Новый вид безопасности
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-list-item width-40">
+                <div class="projects-card ">
+                    <div class="drone">
+                        <div class="card drone">
+                            <div class="description">создание дрона перехватчика для Омского НИИ Приборостроения</div>
+                            <div class="title">
+                                Новый вид безопасности
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-list-item width-40">
+                <div class="projects-card ">
+
+                    <div class="drone">
+                        <div class="card drone">
+                            <div class="description">создание дрона перехватчика для Омского НИИ Приборостроения</div>
+                            <div class="title">
+                                Новый вид безопасности
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-list-item width-60">
+                <div class="projects-card">
+                    <div class="drone">
+                        <div class="card drone">
+                            <div class="description">создание дрона перехватчика для Омского НИИ Приборостроения</div>
+                            <div class="title">
+                                Новый вид безопасности
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="landing-works-more" style="width: 100%">
+                <span class="mdi mdi-cached"></span>
+                <span class="landing-works-more-text">показать  ещё</span>
+            </a>
+        </div>
+
+        <div class="projects-menu">
+            <div class="projects-menu-top">
+                <ul>
+                    <li><a>Интернет магазин</a></li>
+                    <li><a>Landing Page</a></li>
+                    <li><a>Инжиниринг</a></li>
+                    <li><a>Разработка Ботов</a></li>
+                </ul>
+            </div>
+            <div class="projects-menu-bottom">
+                <ul>
+                    <li><a>Магазины</a></li>
+                    <li><a>Недвижимость</a></li>
+                    <li><a>Промышлиность</a></li>
+                    <li><a>Учебные учереждения</a></li>
+                    <li><a>IT-Компании </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
 <!--*******************Футер******************-->
 <footer>
     <div class="container">
@@ -209,6 +290,28 @@
 <link rel="stylesheet" href="libs/animate.css/animate.min.css">
 <script src="js/scripts.min.js"></script>
 <script src="libs/jquery/dist/jquery.min.js"></script>
+<script>
+
+
+    jQuery(window).scroll(function () {
+        if (document.documentElement.clientWidth > 992) {
+            var the_top = jQuery(document).scrollTop();
+            console.log(jQuery('.projects-menu').offset().left);
+            var left = jQuery('.projects-menu').offset().left
+            if (the_top > jQuery('.projects-list').position().top) {
+                jQuery('.projects-menu').addClass('b_fix');
+                $(".projects-menu").css("left", left);
+
+            }
+            else {
+                jQuery('.projects-menu').removeClass('b_fix');
+
+            }
+        }
+    });
+
+
+</script>
 
 </body>
 </html>
