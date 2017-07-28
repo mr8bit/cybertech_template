@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-6988 -433 810 821.062">
+  <defs>
+    <style>
+      .service-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .service-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .service-3 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .service-4 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .service-5 {
+        fill: url(#linear-gradient-5);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="-0.777" y1="2.073" x2="-0.037" y2="2.657" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff6c93"/>
+      <stop offset="1" stop-color="#ff438b"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-1.419" y1="-0.142" x2="-0.409" y2="-0.872" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff318c"/>
+      <stop offset="1" stop-color="#ff438b"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="-0.605" y1="-0.051" x2="0.194" y2="-0.556" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff318c"/>
+      <stop offset="1" stop-color="#765af8"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="-0.329" y1="-0.588" x2="0.571" y2="-1.184" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b345f1"/>
+      <stop offset="1" stop-color="#765af8"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="-0.328" y1="0.527" x2="0.472" y2="1.262" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b345f1"/>
+      <stop offset="1" stop-color="#f445f1"/>
+    </linearGradient>
+  </defs>
+  <g id="Монтажная_область_1" data-name="Монтажная область 1" transform="translate(-5750.729 388.062) rotate(180)">
+    <path id="Path_1466" data-name="Path 1466" class="service-1" d="M792.4,724.779l285.266,266.1,25.293-63.2L803.18,708.29Z" transform="translate(-87.543 -169.818)"/>
+    <path id="Path_1467" data-name="Path 1467" class="service-2" d="M933.45,544.344l178.458,393.767,24.8-62.211-151.2-352.2L941.554,491.72Z" transform="translate(-121.361 -117.894)"/>
+    <path id="Path_1468" data-name="Path 1468" class="service-3" d="M1358.629,670.945l-60.37,107.232-328.6-167.4L933.45,534.9l5.352-82.57Z" transform="translate(-121.361 -108.45)"/>
+    <path id="Path_1469" data-name="Path 1469" class="service-4" d="M427.27,560.94,462.5,672.961l714.4,131.256,60.371-107.232Z" transform="translate(0 -134.49)"/>
+    <path id="Path_1470" data-name="Path 1470" class="service-5" d="M1017.112,0l196,29.589-118.856,226.37L462.5,538.471,427.27,426.45Z" transform="translate(0)"/>
+  </g>
+</svg>

@@ -164,7 +164,94 @@
       background: transparent
       position: relative
       top: 0
+  .service
+    &-svg-box
+      margin-top: -460px
+    &-list
+      width: 100%
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      margin-top: -20px
+      justify-content: space-between
+      &-item
+        margin-top: 40px
+        width: 100%
+        &-head
+          display: flex
+          align-items: center
+          flex-direction: row
+          justify-content: flex-start
+          &-icon
+            &-prototype
+              width: 74px
+              height: 74px
+              background-size: cover
+              background-image: url('../img/icons8-Processor-96.png')
+            &-engineering
+              width: 74px
+              height: 74px
+              background-size: cover
+              background-image: url('../img/icons8-Engineering-96.png')
 
+            &-bot
+              width: 74px
+              height: 74px
+              background-size: cover
+              background-image: url('../img/icons8-Robot_3-96.png')
+            &-corp
+              width: 74px
+              height: 74px
+              background-size: cover
+              background-image: url('../img/icons8-Web_Design_2.png')
+            &-shop
+              width: 74px
+              height: 74px
+              background-size: cover
+              background-image: url('../img/icons8-Shop-96.png')
+            &-landing-page
+              width: 74px
+              height: 74px
+              background-size: cover
+              background-image: url('../img/icons8-Template.png')
+
+          h4
+            font-size: 32px
+            font-weight: 500
+            color: $black
+            padding: 0px
+            margin: 0px
+            margin-left: 15px
+        &-content
+          margin-left: 90px
+          &-text
+            font-size: 16px
+          &-footer
+            margin-top: 30px
+            display: flex
+            align-items: center
+            flex-direction: row
+            justify-content: space-between
+            &-not-price
+              font-size: 24px
+              color: $black
+              font-weight: 400
+            &-price
+              font-size: 32px
+              color: $black
+              font-weight: 500
+            &-more
+              font-size: 16px
+              color: white
+              padding: 10px 24px
+              border-radius: 30px
+              text-transform: uppercase
+              background: linear-gradient(#1E6AFF, #BE25FF)
+              transition: all 0.3s
+              &:hover
+                transform: scale(1.2, 1.2)
+                color: white
+                text-decoration-line: none
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 
@@ -363,6 +450,55 @@
       background: transparent
       position: relative
       top: 0
+
+  .service
+    &-list
+      &-item
+        margin-top: 40px
+        width: 100%
+        &-head
+          display: flex
+          align-items: center
+          flex-direction: row
+          justify-content: flex-start
+          h4
+            line-height: 38px
+            font-size: 32px
+            font-weight: 500
+            color: $black
+            padding: 0px
+            margin: 0px
+            margin-left: 15px
+        &-content
+          margin-left: 0px
+          &-text
+            font-size: 16px
+          &-footer
+            margin-top: 30px
+            display: flex
+            align-items: center
+            flex-direction: row
+            justify-content: space-between
+            &-not-price
+              font-size: 24px
+              color: $black
+              font-weight: 400
+            &-price
+              font-size: 32px
+              color: $black
+              font-weight: 500
+            &-more
+              font-size: 16px
+              color: white
+              padding: 10px 24px
+              border-radius: 30px
+              text-transform: uppercase
+              background: linear-gradient(#1E6AFF, #BE25FF)
+              transition: all 0.3s
+              &:hover
+                transform: scale(1.2, 1.2)
+                color: white
+                text-decoration-line: none
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 
@@ -448,7 +584,30 @@
       background: transparent
       position: relative
       top: 0
-
+  .service
+    &-list
+      &-item
+        margin-top: 40px
+        width: 100%
+        &-content
+          margin-left: 0px
+          &-text
+            font-size: 16px
+          &-footer
+            margin-top: 30px
+            display: flex
+            align-items: center
+            justify-items: center
+            flex-direction: column
+            justify-content: space-between
+            &-not-price
+              font-size: 24px
+              color: $black
+              font-weight: 400
+            &-price
+              font-size: 32px
+              color: $black
+              font-weight: 500
 /*==========  Mobile First  ==========*/
 
 /* Custom, iPhone Retina */
