@@ -9,11 +9,11 @@
 
 --Готовое решение :x:
 
---Проекты :x: ( :point_up: ) 
+--Проекты :white_check_mark:  (адаптивность :white_check_mark: )
 
 ----Просмотр проектов :x: ( :point_up: ) 
 
---Услуги :x:
+--Услуги :x:( :point_up: :point_up:) 
 
 ---Landing Page :white_check_mark: (адаптивность :white_check_mark: )
 
