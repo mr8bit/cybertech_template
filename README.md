@@ -7,24 +7,23 @@
 
   - CyberShop :x:
 
-
 - Проекты :white_check_mark:  (адаптивность :white_check_mark: )
 
-  - Просмотр проектов :x: ( :point_up: ) 
+  - Просмотр проектов :x: ( :point_up: )  (адаптивность :x:)
 
 - Услуги :white_check_mark:  (адаптивность :white_check_mark: )
 
   - Landing Page :white_check_mark: (адаптивность :white_check_mark: )
 
-  - Интернет магазин :x:
+  - Интернет магазин :x: (адаптивность :x:)
 
-  - Корпоративный сайт :x:
+  - Корпоративный сайт :x: (адаптивность :x:)
 
-  - Боты :x:
+  - Боты :x: (адаптивность :x:)
 
-- Блог  :white_check_mark:
+- Блог  :white_check_mark: (адаптивность  :white_check_mark:)
 
-  - Статья :white_check_mark:
+  - Статья :white_check_mark: (адаптивность  :white_check_mark:)
  
 - Поддержка :white_check_mark: (адаптивность :x:)
 
