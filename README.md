@@ -1,39 +1,38 @@
 # CyberTech
--- Главная :white_check_mark: (адаптивность :x:) ( меню :x:)
+- Главная :white_check_mark: (адаптивность :white_check_mark: )( меню :white_check_mark: )
 
----CyberLanding :x:
+  - CyberLanding :x:
 
----CyberCRM :x:
+  - CyberCRM :x:
 
----CyberShop :x:
+  - CyberShop :x:
 
---Готовое решение :x:
+- Готовое решение :x:
 
---Проекты :white_check_mark:  (адаптивность :white_check_mark: )
+- Проекты :white_check_mark:  (адаптивность :white_check_mark: )
 
-----Просмотр проектов :x: ( :point_up: ) 
+  - Просмотр проектов :x: ( :point_up: ) 
 
---Услуги :white_check_mark:  (адаптивность :white_check_mark: )
+- Услуги :white_check_mark:  (адаптивность :white_check_mark: )
 
----Landing Page :white_check_mark: (адаптивность :white_check_mark: )
+  - Landing Page :white_check_mark: (адаптивность :white_check_mark: )
 
+  - Интернет магазин :x:
 
+  - Корпоративный сайт :x:
 
----Интернет магазин :x:
+  - Боты :x:
 
----Корпоративный сайт :x:
+- Блог  :white_check_mark:
 
----Боты :x:
+  - Статья :white_check_mark:
+ 
+- Поддержка :white_check_mark: (адаптивность :x:)
 
---Блог :x:
+- О нас  :white_check_mark: (адаптивность :x:)
 
---Поддержка :white_check_mark: (адаптивность :x:)
+- Вакансии  :white_check_mark: (адаптивность  :white_check_mark:)
 
---О нас  :white_check_mark: (адаптивность :x:)
+- Контакты  :white_check_mark: (адаптивность  :white_check_mark:)
 
---Вакансии  :white_check_mark: (адаптивность :x:)
-
---Контакты  :white_check_mark: (адаптивность :x:)
-
---Партнеры  :white_check_mark: (адаптивность :x:)
-
+- Партнеры  :white_check_mark: (адаптивность :x:)
