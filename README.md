@@ -15,15 +15,13 @@
 
 - Услуги :white_check_mark:  (адаптивность :white_check_mark: )
 
-- Landing Page :white_check_mark: (адаптивность :white_check_mark: )
+  - Landing Page :white_check_mark: (адаптивность :white_check_mark: )
 
+  - Интернет магазин :x:
 
+  - Корпоративный сайт :x:
 
-- Интернет магазин :x:
-
-- Корпоративный сайт :x:
-
-- Боты :x:
+  - Боты :x:
 
 - Блог :x:
 
