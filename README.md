@@ -1,17 +1,17 @@
 # CyberTech
 - Главная :white_check_mark: (адаптивность :x:) ( меню :x:)
 
- - CyberLanding :x:
+  - CyberLanding :x:
 
- - CyberCRM :x:
+  - CyberCRM :x:
 
- - CyberShop :x:
+  - CyberShop :x:
 
 - Готовое решение :x:
 
 - Проекты :white_check_mark:  (адаптивность :white_check_mark: )
 
- - Просмотр проектов :x: ( :point_up: ) 
+  - Просмотр проектов :x: ( :point_up: ) 
 
 - Услуги :white_check_mark:  (адаптивность :white_check_mark: )
 
