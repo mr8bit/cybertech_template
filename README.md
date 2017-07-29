@@ -7,7 +7,6 @@
 
   - CyberShop :x:
 
-- Готовое решение :x:
 
 - Проекты :white_check_mark:  (адаптивность :white_check_mark: )
 
