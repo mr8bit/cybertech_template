@@ -13,7 +13,7 @@
 
 ----Просмотр проектов :x: ( :point_up: ) 
 
---Услуги :x:( :point_up: :point_up:) 
+--Услуги :white_check_mark:  (адаптивность :white_check_mark: )
 
 ---Landing Page :white_check_mark: (адаптивность :white_check_mark: )
 

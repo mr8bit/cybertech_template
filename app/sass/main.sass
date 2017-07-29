@@ -1532,5 +1532,129 @@ body
               color: white
               text-decoration: none
 
+
+
+.blog
+  width: 100%
+  margin-top: 50px
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  &-list
+    padding-right: 10px
+    width: 80%
+    &-item
+      width: 100%
+      &-head
+        h2
+          color: $black
+          margin: 0
+          font-size: 36px
+        &-about
+          margin: 0
+          color: $black
+          opacity: 0.6
+          font-size: 14px
+      &-content
+        height: auto
+        width: 100%
+        position: relative
+        display: block
+        margin-top: 15px
+        img
+          margin: 10px auto
+          display: block
+          max-width: 100%
+          height: auto
+        p
+          font-size: 14px
+        h4
+          margin: 0 0
+          color: black
+          font-size: 20px
+        blockquote
+          font-size: 14px
+          font-style: italic
+      &-footer
+        color: rgba(22,22,22,0.6)
+        font-size: 14px
+        a
+          color: rgba(22,22,22,0.6)
+          transition: color 0.3s
+          &:hover
+            opacity: 1
+            text-decoration: none
+            color: #1E6AFF
+    &-comment
+      margin-top: 20px
+    &-pagination
+      width: 100%
+
+      ul
+        text-align: center
+        li
+          display: inline-block
+          a
+            text-align: center
+            padding: 5px 10px
+            margin: 0 5px
+            color: $black
+            border-radius: 5px
+            transition: all 0.4s
+            &:hover
+              color: white
+              background-color: $black
+              text-decoration: none
+          .active
+            color: white
+            background-color: $black
+            &:hover
+              color: white
+              background-color: $black
+  &-sidebar
+    padding-left: 10px
+    width: 20%
+    &-search
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+      input[type="text"]
+        width: 100%
+        height: 30px
+        padding: 5px
+        border: 1px solid #B1B1B1
+        &:focus
+          outline: none
+      input[type="submit"]
+        margin-top: 10px
+        background-color: #0093EE
+        border: 1px solid #0093EE
+        color: white
+        font-size: 12px
+        text-transform: uppercase
+        padding: 5px 20px
+        border-radius: 30px
+        transition: background-color 0.3s, color 0.3s
+        &:focus
+          outline: none
+        &:hover
+          border: 1px solid #CCCBCB
+          background-color: white
+          color: #0093EE
+          text-decoration: none
+    ul
+      margin-top: 40px
+      padding: 0px
+      margin-left: 20px
+      li
+        list-style: square
+        padding: 0px
+        a
+          font-size: 14px
+          color: $black
+          transition: all 0.3s
+          &:hover
+            text-decoration: none
+            color: #1E6AFF
 @import "media"
 // Всегда в конце
