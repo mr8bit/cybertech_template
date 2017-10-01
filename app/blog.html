@@ -58,12 +58,22 @@
                 </g>
             </svg>
             <div class="navigation-bar">
-                <ul>
+                <ul class="navigation-bar-desktop">
                     <li><a href="#">ГЛАВНАЯ</a></li>
                     <li><a href="#">TWITTER</a></li>
                 </ul>
                 <div class="navigation-bar-menu">
-                    <span class="mdi mdi-menu mdi-48px"></span>
+                    <span onclick="viewMenu()" id="menu-mobile" class="mdi mdi-menu mdi-48px"></span>
+                </div>
+                <div class="navigation-bar-menu-mobile">
+                    <ul class="navigation-bar-menu-mobile-menu">
+                        <li>
+                            <a>ГЛАВНАЯ</a>
+                        </li>
+                        <li>
+                            <a>TWITTER</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -118,7 +128,7 @@
             <div class="blog-list-pagination">
                 <ul>
 
-                    <li >
+                    <li>
                         <a class="active">1</a>
                     </li>
                     <li>

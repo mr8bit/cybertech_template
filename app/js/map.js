@@ -70,7 +70,7 @@ var init = function() {
     camera.lookAt(centerVector);
     scene.add(camera);
 
-    texture = THREE.ImageUtils.loadTexture("https://s3-us-west-2.amazonaws.com/s.cdpn.io/127738/transparentMap.png", undefined, function() {
+    texture = THREE.ImageUtils.loadTexture("http://pngimg.com/uploads/world_map/world_map_PNG16.png", undefined, function() {
         imagedata = getImageData(texture.image);
         drawTheMap();
     });

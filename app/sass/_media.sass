@@ -344,6 +344,108 @@
             font-size: 16px
             line-height: 23px
             color: #afb1b3
+  .production
+    &-head
+      &-title
+        padding: 0 20px
+        &-main
+          flex-direction: column
+          align-items: center
+          align-content: center
+          svg
+            margin-right: 0px
+          h1
+            margin-top: 20px
+            font-size: 40px
+            line-height: 40px
+        &-tagline
+          width: 100%
+          font-size: 24px
+          line-height: 30px
+      &-svgbox
+
+        width: 200%
+        margin-top: -300px
+    &-title
+      font-size: 30px
+      text-align: center
+    &-item
+      padding: 30px 0
+      flex-direction: column
+      &-first-child
+        padding: 10px 0px 20px 0
+      &-text
+        width: 100%
+
+        &-title
+          font-size: 20px
+          line-height: 24px
+          text-align: center
+        &-description
+          margin-top: 15px
+          font-size: 16px
+          line-height: 20px
+      img
+        margin-top: 30px
+    &-support
+      &-opacity
+        height: 450px
+      &-text
+        flex-direction: column
+        flex-wrap: wrap
+        h4
+          line-height: 28px
+          font-size: 24px
+        &-description
+          font-size: 18px
+          line-height: 24px
+          width: 100%
+        &-link
+          padding: 10px 40px
+          font-size: 18px
+          font-weight: 100
+      &-bg
+        height: 450px
+        background-size: cover
+    &-editlp
+      padding: 40px 0
+      &-title
+        font-size: 28px
+        line-height: 32px
+      &-list
+        flex-direction: row
+        flex-wrap: wrap
+        &-item
+          margin-top: 15px
+          width: 50%
+          &:first-child
+            margin-top: 0px
+    &-update
+      width: 100%
+      padding-right: 0px
+      border-right: none
+      &-head
+        flex-direction: column
+      &-body
+        &-title
+          h3
+            font-size: 30px
+            line-height: 30px
+          span
+            font-size: 38px
+            line-height: 38px
+        &-content
+          ul
+            margin: 0px
+            padding: 0px
+    &-features
+      width: 100%
+      ul
+        padding: 0
+        margin: 0
+        li
+          div
+            text-align: center
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
@@ -933,6 +1035,28 @@
         height: auto
         margin-top: 40px
         display: block
+  .production
+    &-head
+      height: 90vh
+      &-title
+        padding: 0 20px
+        &-main
+          flex-direction: column
+          align-items: center
+          align-content: center
+          svg
+            margin-right: 0px
+          h1
+            margin-top: 20px
+            font-size: 40px
+            line-height: 40px
+        &-tagline
+          width: 100%
+          font-size: 24px
+          line-height: 30px
+      &-svgbox
+        width: 300%
+        margin-top: -130px
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 
@@ -1214,7 +1338,6 @@
                 transform: scale(1.2, 1.2)
                 color: white
                 text-decoration-line: none
-
 /*==========  Mobile First  ==========*/
 
 /* Custom, iPhone Retina */
