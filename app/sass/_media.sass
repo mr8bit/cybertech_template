@@ -20,13 +20,10 @@
 
   .navigation-bar-desktop
     display: none
-
-
   .navigation-bar-menu
     display: block
     position: relative
     z-index: 3
-
 
   .tagline
     height: 40vh
@@ -421,10 +418,204 @@
         li
           div
             text-align: center
+  .vacancy
+    padding: 60px 0
+    height: auto
+    &-svgbox
+      z-index: 2
+      margin-top: -270px
+      width: 100%
+    &-info
+      margin-top: 0
+      width: 90%
+      position: absolute
+      z-index: 13
+      &-title
+        font-size: 60px
+        font-weight: 500
+        color: $black
+      &-description
+        margin-top: 15px
+        line-height: 20px
+        color: $black
+    &-search
+      background-color: white
+      z-index: 0
+      padding-top: 30px
+      padding-bottom: 90px
+      position: relative
+      &-title
+        margin-top: 0
+        font-size: 30px
+        color: $black
+        font-weight: 500
+        padding: 0
+      &-list
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        flex-wrap: wrap
+        &-item
+          margin-top: 20px
+          width: 100%
+  .about
+    padding: 40px 0
+    height: 70vh
+    &-svgbox
+      margin: 0 auto
+      width: 100%
+      margin-top: -296px
+    &-info
+      position: absolute
+      width: 95%
+      display: flex
+      height: 100%
+      flex-direction: column
+      align-content: space-between
+      &-tagline
+        &-main
+          width: 100%
+          height: auto
+          &-title
+            font-size: 60px
+            color: #212121
+            width: 90%
+            line-height: 65px
+            padding: 0
+            margin: 0
+            font-weight: 500
+          &-description
+            width: 50%
+            margin-top: 30px
+            line-height: 24px
+            font-size: 20px
+            color: #212121
+            font-weight: 300
+        &-second
+          display: flex
+          align-items: center
+          justify-content: space-between
+          &-left
+            width: 40%
+            &-title
+              font-size: 36px
+              color: #212121
+              font-weight: 300
+              line-height: 40px
+            &-description
+              font-size: 20px
+              line-height: 26px
+              font-weight: 300
+              color: #212121
+          &-right
+            width: 50%
+            &-description
+              color: #212121
+              font-size: 18px
+              padding-top: 110px
+              font-weight: 300
+              line-height: 24px
+    &-today
+      width: 100%
+      &-title
+        font-size: 30px
+        font-weight: 500
+        color: $black
+      &-list
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        &-item
+          display: flex
+          flex-direction: column
+          align-items: center
+          width: 50%
+          margin-top: 15px
+          margin-bottom: 15px
+          &-icon
+            line-height: 125px
+            color: $black
+            font-size: 125px
+          &-value
+            margin-top: 10px
+            color: $black
+            line-height: 80px
+            font-size: 70px
+          &-title
+            margin-top: 5px
+            width: 50%
+            text-align: center
+            line-height: 20px
+            color: $black
+            font-size: 14px
+  .partner
+    padding: 40px 0
+    height: 80vh
+    &-svgbox
+      margin-top: -100px
+      margin-left: -470px
+    &-info
+      position: absolute
+      width: 93%
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      &-tagline
+        width: 100%
+        &-title
+          padding: 0
+          line-height: 70px
+          font-size: 60px
+          color: $black
+          font-weight: 500
+        &-description
+          line-height: 30px
+          font-size: 25px
+          font-weight: 300
+          color: $black
+      &-list
+        width: 100%
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        align-items: center
+        &-item
+          display: flex
+          justify-content: center
+          width: 50%
+    &-search
+      background-color: white
+      z-index: 90
+      padding-top: 30px
+      padding-bottom: 90px
+      flex-direction: column
+      position: relative
+      &-title
+        width: 100%
+        line-height: 46px
+        font-size: 36px
+        font-weight: 500
+        color: $black
+    &-content
+      width: 100%
+      display: flex
+      justify-content: space-between
+      position: relative
+      flex-direction: column
+      &-col
+        width: 100%
+        &-text
+          color: $black
+          font-size: 21px
+          line-height: 28px
+          font-weight: 300
+          a
+            color: #0093EE
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-
   .landing
     height: calc(90vh - 60px)
 
@@ -730,7 +921,6 @@
 
   .we-make ul
     padding: 0
-
   .we-make li:first-child
     display: inline-block
     padding: 5px 15px 5px 15px
@@ -897,7 +1087,6 @@
             background-color: white
             border: 1px solid #CCCBCB
 
-
   .technical-contact
     width: 100%
     margin: 50px 0
@@ -1031,7 +1220,185 @@
           line-height: 30px
       &-svgbox
         width: 300%
-        margin-top: -130px
+        margin-top: -240px
+  .vacancy
+    &-svgbox
+      width: 200%
+      float: right
+      position: relative
+      z-index: 0
+      margin: -215px 0 auto
+      overflow-x: hidden
+    &-info
+      margin-top: 0
+      width: 90%
+      position: absolute
+      z-index: 13
+      &-title
+        font-size: 60px
+        font-weight: 500
+        color: $black
+      &-description
+        margin-top: 15px
+        line-height: 20px
+        color: $black
+  .about
+    padding: 180px 0
+    height: 230vh
+    &-svgbox
+      margin: 0 auto
+      width: 100%
+      margin-top: -290px
+    &-info
+      position: absolute
+      width: 95%
+      display: flex
+      height: 100%
+      flex-direction: column
+      align-content: space-between
+      &-tagline
+        &-main
+          width: 100%
+          height: auto
+          &-title
+            font-size: 60px
+            color: #212121
+            width: 100%
+            line-height: 65px
+            padding: 0
+            margin: 0
+            font-weight: 500
+          &-description
+            width: 100%
+            margin-top: 150px
+            line-height: 32px
+            font-size: 24px
+            color: #212121
+            font-weight: 300
+        &-second
+          display: flex
+          align-items: center
+          flex-wrap: wrap
+          justify-content: space-between
+          &-left
+            width: 100%
+            &-title
+              color: #212121
+              font-weight: 400
+              line-height: 32px
+              font-size: 35px
+            &-description
+              line-height: 32px
+              font-size: 24px
+              font-weight: 300
+              color: #212121
+          &-right
+            width: 100%
+            &-description
+              color: #212121
+              padding-top: 60px
+              font-weight: 300
+              line-height: 32px
+              font-size: 24px
+    &-today
+      width: 100%
+      &-title
+        font-size: 30px
+        font-weight: 500
+        color: $black
+      &-list
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        &-item
+          display: flex
+          flex-direction: column
+          align-items: center
+          width: 100%
+          margin-top: 15px
+          margin-bottom: 15px
+          &-icon
+            line-height: 125px
+            color: $black
+            font-size: 125px
+          &-value
+            margin-top: 10px
+            color: $black
+            line-height: 80px
+            font-size: 70px
+          &-title
+            margin-top: 5px
+            width: 50%
+            text-align: center
+            line-height: 20px
+            color: $black
+            font-size: 14px
+  .partner
+    padding: 40px 0
+    height: 140vh
+    &-svgbox
+      margin-top: -100px
+      margin-left: -470px
+    &-info
+      position: absolute
+      width: 93%
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      &-tagline
+        width: 100%
+        &-title
+          padding: 0
+          line-height: 60px
+          font-size: 42px
+          color: $black
+          font-weight: 500
+        &-description
+          line-height: 30px
+          font-size: 25px
+          font-weight: 300
+          color: $black
+      &-list
+        width: 100%
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        align-items: center
+        &-item
+          display: flex
+          justify-content: center
+          width: 50%
+    &-search
+      background-color: white
+      z-index: 90
+      padding-top: 30px
+      padding-bottom: 90px
+      flex-direction: column
+      position: relative
+      &-title
+        width: 100%
+        line-height: 46px
+        font-size: 36px
+        font-weight: 500
+        color: $black
+    &-content
+      width: 100%
+      display: flex
+      justify-content: space-between
+      position: relative
+      flex-direction: column
+      &-col
+        width: 100%
+        &-text
+          color: $black
+          font-size: 21px
+          line-height: 28px
+          font-weight: 300
+          a
+            color: #0093EE
+  .input-form .input-control-50
+    width: 100%
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 
@@ -1041,7 +1408,6 @@
     &-formOrder-form
       width: 100%
       padding: 10px
-
 
   .navigation2
     display: flex
@@ -1155,7 +1521,41 @@
             background-color: white
             border: 1px solid #CCCBCB
 
-
+  .production
+    &-head
+      height: 90vh
+      &-title
+        padding: 0 20px
+        &-main
+          flex-direction: column
+          align-items: center
+          align-content: center
+          svg
+            margin-right: 0px
+          h1
+            margin-top: 20px
+            font-size: 40px
+            line-height: 40px
+        &-tagline
+          width: 100%
+          font-size: 24px
+          line-height: 30px
+      &-svgbox
+        width: 300%
+        margin-top: -130px
+    &-editlp
+      padding: 40px 0
+      &-title
+        font-size: 28px
+        line-height: 32px
+      &-list
+        flex-direction: row
+        flex-wrap: wrap
+        &-item
+          margin-top: 15px
+          width: 100%
+          &:first-child
+            margin-top: 0px
   .technical-contact
     width: 100%
     margin: 50px 0
@@ -1313,6 +1713,98 @@
                 transform: scale(1.2, 1.2)
                 color: white
                 text-decoration-line: none
+  .about
+    padding: 80px 0
+    height: 280vh
+    &-svgbox
+      margin: 0 auto
+      width: 100%
+      margin-top: -200px
+    &-info
+      position: absolute
+      width: 95%
+      display: flex
+      height: 100%
+      flex-direction: column
+      align-content: space-between
+      &-tagline
+        &-main
+          width: 100%
+          height: auto
+          &-title
+            font-size: 50px
+            color: #212121
+            width: 100%
+            line-height: 55px
+            padding: 0
+            margin: 0
+            font-weight: 500
+          &-description
+            width: 100%
+            margin-top: 150px
+            line-height: 32px
+            font-size: 24px
+            color: #212121
+            font-weight: 300
+        &-second
+          display: flex
+          align-items: center
+          flex-wrap: wrap
+          justify-content: space-between
+          &-left
+            width: 100%
+            &-title
+              color: #212121
+              font-weight: 400
+              line-height: 32px
+              font-size: 35px
+            &-description
+              line-height: 32px
+              font-size: 24px
+              font-weight: 300
+              color: #212121
+          &-right
+            width: 100%
+            &-description
+              color: #212121
+              padding-top: 60px
+              font-weight: 300
+              line-height: 32px
+              font-size: 24px
+    &-today
+      width: 100%
+      &-title
+        font-size: 30px
+        font-weight: 500
+        color: $black
+      &-list
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        &-item
+          display: flex
+          flex-direction: column
+          align-items: center
+          width: 100%
+          margin-top: 15px
+          margin-bottom: 15px
+          &-icon
+            line-height: 125px
+            color: $black
+            font-size: 125px
+          &-value
+            margin-top: 10px
+            color: $black
+            line-height: 80px
+            font-size: 70px
+          &-title
+            margin-top: 5px
+            width: 50%
+            text-align: center
+            line-height: 20px
+            color: $black
+            font-size: 14px
 /*==========  Mobile First  ==========*/
 
 /* Custom, iPhone Retina */

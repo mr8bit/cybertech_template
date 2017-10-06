@@ -663,12 +663,11 @@ body
       text-decoration: none
 
 .partner
-  background-color: $black
   padding: 40px 0
   height: 540px
   &-svgbox
-    margin-top: -40px
-    margin-left: -150px
+    margin-top: -100px
+    margin-left: -290px
   &-info
     position: absolute
     width: 1170px
@@ -680,12 +679,12 @@ body
         padding: 0
         line-height: 70px
         font-size: 60px
-        color: white
+        color: $black
         font-weight: 500
       &-description
         line-height: 30px
         font-size: 20px
-        color: white
+        color: $black
     &-list
       width: 40%
       display: flex
@@ -778,14 +777,15 @@ body
         outline: none
 
 .vacancy
-  background-color: $black
   padding: 90px 0
   height: 450px
 
   &-svgbox
-    z-index: 0
-    margin-top: -280px
+    z-index: 2
+    margin-left: 20px
+    margin-top: -350px
     position: relative
+
   &-info
     margin-top: 0
     width: 45%
@@ -794,15 +794,15 @@ body
     &-title
       font-size: 60px
       font-weight: 500
-      color: white
+      color: $black
     &-description
       margin-top: 15px
       line-height: 20px
-      color: white
+      color: $black
 
   &-search
     background-color: white
-    z-index: 90
+    z-index: 0
     padding-top: 30px
     padding-bottom: 90px
     position: relative
@@ -850,7 +850,6 @@ body
             border: 1px solid #CCCBCB
 
 .about
-  background-color: $black
   padding: 40px 0
   height: 940px
   &-svgbox
@@ -870,7 +869,7 @@ body
         height: 50%
         &-title
           font-size: 60px
-          color: white
+          color: #212121
           width: 90%
           line-height: 65px
           padding: 0
@@ -880,7 +879,8 @@ body
           margin-top: 30px
           line-height: 24px
           font-size: 20px
-          color: white
+          color: #212121
+          font-weight: 300
 
       &-second
         display: flex
@@ -890,19 +890,20 @@ body
           width: 40%
           &-title
             font-size: 36px
-            color: white
-            font-weight: 500
+            color: #212121
+            font-weight: 300
             line-height: 40px
           &-description
             font-size: 20px
             line-height: 26px
             font-weight: 300
-            color: white
+            color: #212121
         &-right
           width: 50%
           &-description
-            color: white
-            font-size: 16px
+            color: #212121
+            font-size: 18px
+            font-weight: 300
             line-height: 24px
   &-today
     width: 100%
@@ -913,6 +914,7 @@ body
     &-list
       display: flex
       flex-direction: row
+      flex-wrap: wrap
       justify-content: space-between
       align-items: center
       &-item
@@ -1207,6 +1209,51 @@ body
             text-decoration: none
             background-color: white
             border: 1px solid #CCCBCB
+  &-platform
+    display: flex
+    padding: 50px 0
+    flex-direction: column
+    flex-wrap: wrap
+    &-brand
+      padding: 15px 0
+      display: flex
+      justify-content: center
+      align-items: center
+      svg
+        margin-right: 20px
+      h4
+        font-weight: 500
+        font-size: 50px
+        line-height: 50px
+    &-features
+      display: flex
+      flex-direction: row
+      margin-top: 30px
+      flex-wrap: wrap
+      &-item
+        padding: 0 30px
+        display: flex
+        flex-direction: column
+        width: 33.333333333%
+        align-items: center
+        justify-content: space-between
+        &:last-child
+          padding-right: 0px
+        &:first-child
+          padding-left: 0px
+        &-text
+          h5
+            font-size: 26px
+            color: #212121
+            line-height: 36px
+            font-weight: 500
+            text-align: center
+          div
+            font-size: 18px
+            color: #212121
+            line-height: 24px
+            text-align: center
+
 
   &-telegram
     margin-top: 50px
@@ -1904,7 +1951,7 @@ body
           margin-right: 20px
           font-size: 44px
           font-weight: 500
-          color: rgba(0,0,0,0)
+          color: rgba(0, 0, 0, 0)
           -webkit-text-stroke-width: 2px
           -webkit-text-stroke-color: #0093EE
       &-content
@@ -1926,13 +1973,12 @@ body
         span
           display: block
           font-size: 90px
-          color: rgba(0,0,0,0)
+          color: rgba(0, 0, 0, 0)
           -webkit-text-stroke-width: 2px
           -webkit-text-stroke-color: #0093EE
         div
           width: 80%
           margin-left: 0px
-
 
 @import "media"
 // Всегда в конце
