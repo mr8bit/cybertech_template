@@ -9,7 +9,7 @@
 
 - Проекты :white_check_mark:  (адаптивность :white_check_mark: )
 
-  - Просмотр проектов  ( :white_check_mark: )  (адаптивность :x:)
+  - Просмотр проектов  ( :white_check_mark: )  (адаптивность :white_check_mark:)
 
 - Услуги :white_check_mark:  (адаптивность :white_check_mark: )
 
