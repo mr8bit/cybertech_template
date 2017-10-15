@@ -1,7 +1,7 @@
 # CyberTech
 - Главная :white_check_mark: (адаптивность :white_check_mark: )( меню :white_check_mark: )
 
-  - CyberLanding :x:
+  - CyberLanding :white_check_mark:
 
   - CyberCRM :x:
 
@@ -9,7 +9,7 @@
 
 - Проекты :white_check_mark:  (адаптивность :white_check_mark: )
 
-  - Просмотр проектов :x: ( :point_up: )  (адаптивность :x:)
+  - Просмотр проектов :white_check_mark: ( :point_up: )  (адаптивность :x:)
 
 - Услуги :white_check_mark:  (адаптивность :white_check_mark: )
 
@@ -27,10 +27,10 @@
  
 - Поддержка :white_check_mark: (адаптивность :x:)
 
-- О нас  :white_check_mark: (адаптивность :x:)
+- О нас  :white_check_mark: (адаптивность :white_check_mark:)
 
 - Вакансии  :white_check_mark: (адаптивность  :white_check_mark:)
 
 - Контакты  :white_check_mark: (адаптивность  :white_check_mark:)
 
-- Партнеры  :white_check_mark: (адаптивность :x:)
+- Партнеры  :white_check_mark: (адаптивность :white_check_mark:)
