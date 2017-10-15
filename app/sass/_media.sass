@@ -122,77 +122,6 @@
           width: 100%
         &-content
           width: 100%
-  .projects
-    display: flex
-    justify-content: space-between
-    width: 100%
-    flex-wrap: wrap
-    &-head
-      display: block
-      width: 100%
-      height: 55vh
-      padding: 120px 0
-      &-title
-        position: absolute
-        width: 60%
-        z-index: 2
-        color: $black
-        h1
-          font-size: 60px
-          line-height: 72px
-        &-tagline
-          font-size: 20px
-          color: $black
-          line-height: 22px
-      &-svgbox
-        width: 100%
-        float: right
-        position: relative
-        margin-top: -250px
-        z-index: 0
-    &-list
-      order: 1
-      width: 100%
-      display: flex
-      flex-wrap: wrap
-      &-item
-        width: 100%
-    &-menu
-      order: 0
-      transition: all 0.3s
-      display: flex
-      flex-direction: row
-      justify-content: space-between
-      align-content: center
-      align-items: center
-      width: 100%
-      &-top
-        order: 0
-        width: 45%
-      ul
-        flex-wrap: wrap
-        align-content: center
-        padding: 0
-        flex-direction: row
-        align-items: center
-        display: flex
-        li
-          padding-left: 10px
-          display: block
-          a
-            color: $black
-            transition: all 0.3s
-            &:hover
-              color: #0093EE
-              text-decoration: none
-      &-bottom
-        width: 45%
-        padding-top: 0
-        order: 1
-    .b_fix
-      background: transparent
-      position: relative
-      top: 0
   .service
     &-svg-box
       margin-top: -460px
@@ -612,7 +541,197 @@
           font-weight: 300
           a
             color: #0093EE
+  .our-office
+    position: relative
+    padding: 0px 0
+    padding-bottom: 90px
+    &-svgbox
+      z-index: 2
+      margin-top: -140px
+      margin-right: -15px
+      margin-left: -15px
+      position: relative
+    &-info
+      position: absolute
+      z-index: 13
+      width: 750px
+      margin-top: 60px
+      height: 100%
+      &-title
+        font-weight: 500
+        font-size: 60px
+        color: $black
+      &-addresses
+        display: flex
+        justify-content: space-between
+        align-items: center
+        align-content: center
+        width: 100%
+        margin-top: 60px
+      &-address
+        width: 300px
+        height: 100%
+        &-title
+          font-size: 36px
+          color: $black
+          font-weight: 500
+        &-route
+          color: $black
+          font-size: 16px
+        &-phone
+          color: $black
+          margin-bottom: 15px
+          font-size: 16px
+        .write-to-us
+          float: right
+          color: white
+          text-transform: uppercase
+          font-size: 14px
+          background-color: #0093EE
+          border-radius: 30px
+          padding: 10px 20px
+          transition: color 0.3s, background-color 0.3s, border 0.3s
+          &:hover
+            color: #0093EE
+            text-decoration: none
+            background-color: transparent
 
+      &-uraddress
+        width: 300px
+        height: 100%
+        &-title
+          font-size: 18px
+          color: $black
+          font-weight: 500
+        .write-to-us
+          color: white
+          text-transform: uppercase
+          font-size: 14px
+          background-color: #0093EE
+          border-radius: 30px
+          padding: 10px 20px
+          transition: color 0.3s, background-color 0.3s, border 0.3s
+          &:hover
+            color: #0093EE
+            text-decoration: none
+            background-color: transparent
+
+  .contact-us
+    width: 100%
+    margin-top: 100px
+    &-title
+      font-size: 36px
+      color: $black
+      font-weight: 500
+      line-height: 40px
+    &-tagline
+      margin-top: 15px
+      font-size: 30px
+      color: $black
+      line-height: 37px
+      font-weight: 300
+      width: 100%
+    &-departaments
+      margin-top: 35px
+      width: 100%
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-between
+      display: flex
+    &-departament
+      width: 50%
+      text-align: left
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      &:last-child
+        margin-top: 40px
+        width: 100%
+      &-title
+        font-weight: 500
+        color: $black
+        font-size: 22px
+      &-person
+        margin-top: 5px
+        font-size: 14px
+        color: $black
+        text-transform: uppercase
+        font-weight: 500
+      &-position
+        font-size: 14px
+        color: $black
+      &-email
+        font-size: 14px
+        color: #0093EE
+        font-weight: normal
+      &-write
+        padding: 10px 20px
+        background-color: #0093EE
+        color: white
+        border-radius: 20px
+        font-size: 14px
+        margin-top: 15px
+        border: 1px solid #0093EE
+        text-transform: uppercase
+        transition: color 0.3s, background-color 0.3s, border 0.3s
+        &:hover
+          color: #0093EE
+          text-decoration: none
+          background-color: white
+          border: 1px solid #CCCBCB
+  .technical-contact
+    width: 100%
+    margin: 50px 0
+    &-title
+      font-weight: 500
+      color: $black
+      padding: 0px
+      margin: 0
+      font-size: 36px
+    &-description
+      color: $black
+      font-size: 16px
+      margin-top: 5px
+      margin-bottom: 25px
+    &-to-go
+      color: #0093EE
+      padding: 17px 31px
+      border: 1px solid #CCCBCB
+      border-radius: 30px
+      margin-top: 30px
+      transition: color 0.3s, background-color 0.3s, border-color 0.3s
+      &:hover
+        color: white
+        background-color: #0093EE
+        border-color: #0093EE
+        text-decoration: none
+  .projects
+    &-head
+      display: block
+      width: 100%
+      padding: 80px 0
+      &-title
+        position: absolute
+        width: 80%
+        z-index: 2
+        color: $black
+        h1
+          font-size: 60px
+          line-height: 72px
+        &-tagline
+          font-size: 20px
+          color: $black
+          line-height: 22px
+      &-svgbox
+        width: 830px
+        float: right
+        height: 70vh
+        position: relative
+        margin-top: -300px
+        z-index: 0
+    &-list
+      &-item
+        width: 50%
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
@@ -759,79 +878,6 @@
         font-size: 50px
         line-height: 52px
         text-transform: uppercase
-  .projects
-    display: flex
-    justify-content: space-between
-    width: 100%
-    flex-wrap: wrap
-    &-head
-      display: block
-      width: 100%
-      height: 100vh
-      padding: 120px 0
-      &-title
-        position: absolute
-        width: 90%
-        z-index: 2
-        color: $black
-        h1
-          font-size: 60px
-          line-height: 72px
-        &-tagline
-          font-size: 20px
-          color: $black
-          line-height: 22px
-      &-svgbox
-        width: 200%
-        float: right
-        position: absolute
-        margin-top: -20px
-        top: 0
-        right: 0
-        z-index: 0
-    &-list
-      order: 1
-      width: 100%
-      display: flex
-      flex-wrap: wrap
-      &-item
-        width: 100%
-    &-menu
-      order: 0
-      transition: all 0.3s
-      display: flex
-      flex-direction: column
-      justify-content: space-between
-      align-content: center
-      align-items: center
-      width: 100%
-      &-top
-        order: 0
-        width: 100%
-      ul
-        flex-wrap: wrap
-        align-content: center
-        padding: 0
-        flex-direction: row
-        align-items: center
-        display: flex
-        li
-          padding-left: 10px
-          display: block
-          a
-            color: $black
-            transition: all 0.3s
-            &:hover
-              color: #0093EE
-              text-decoration: none
-      &-bottom
-        width: 100%
-        padding-top: 0
-        order: 1
-    .b_fix
-      background: transparent
-      position: relative
-      top: 0
   .product
     display: flex
     flex-direction: column
@@ -1000,92 +1046,6 @@
           text-decoration: none
           background-color: white
           border: 1px solid #CCCBCB
-
-  .our-office
-    position: relative
-    padding: 60px 0
-    padding-bottom: 90px
-    background-color: $black
-    &-map
-      display: flex
-      position: relative
-      justify-content: center
-      #map
-        width: 100%
-        height: 532px
-    &-info
-      margin-top: -580px
-      position: relative
-      width: 100%
-      height: 100%
-      &-title
-        font-weight: 500
-        font-size: 60px
-        color: white
-      &-addresses
-        display: flex
-        margin-top: 60px
-        width: 100%
-        align-items: center
-        justify-content: center
-        align-content: center
-        flex-direction: column
-      &-address
-        text-align: center
-        order: 0
-        width: 100%
-
-        height: 140px
-        float: none
-        &-title
-          font-size: 36px
-          color: white
-          font-weight: 500
-        &-route
-          color: white
-          font-size: 16px
-        &-phone
-          color: white
-          margin-bottom: 15px
-          font-size: 16px
-        .write-to-us
-          color: white
-          display: none
-          text-transform: uppercase
-          font-size: 14px
-          background-color: #0093EE
-          border-radius: 30px
-          padding: 10px 20px
-          border: 1px solid #0093EE
-          transition: color 0.3s, background-color 0.3s, border 0.3s
-          &:hover
-            color: #0093EE
-            text-decoration: none
-            background-color: white
-            border: 1px solid #CCCBCB
-
-      &-uraddress
-        width: 100%
-        order: 1
-        text-align: center
-        margin-top: 30px
-        &-title
-          font-size: 16px
-          color: white
-        .write-to-us
-          color: white
-          text-transform: uppercase
-          font-size: 14px
-          background-color: #0093EE
-          border-radius: 30px
-          padding: 10px 20px
-          border: 1px solid #0093EE
-          transition: color 0.3s, background-color 0.3s, border 0.3s
-          &:hover
-            color: #0093EE
-            text-decoration: none
-            background-color: white
-            border: 1px solid #CCCBCB
 
   .technical-contact
     width: 100%
@@ -1399,6 +1359,134 @@
             color: #0093EE
   .input-form .input-control-50
     width: 100%
+  .our-office
+    position: relative
+    padding: 0px 0
+    padding-bottom: 90px
+    &-svgbox
+      z-index: 2
+      margin-top: -90px
+      margin-right: 0px
+      margin-left: -155px
+      height: 70vh
+      width: 140%
+      position: relative
+    &-info
+      position: absolute
+      z-index: 13
+      width: 89%
+      margin-top: 10px
+      height: 70vh
+      &-title
+        font-weight: 500
+        font-size: 60px
+        color: $black
+      &-addresses
+        display: flex
+        justify-content: space-between
+        align-items: center
+        align-content: center
+        width: 100%
+        flex-wrap: wrap
+        margin-top: 60px
+      &-address
+        width: 100%
+        height: 100%
+        &-title
+          font-size: 36px
+          color: $black
+          font-weight: 500
+        &-route
+          color: $black
+          font-size: 18px
+        &-phone
+          color: $black
+          margin-bottom: 15px
+          font-size: 18px
+        .write-to-us
+          float: left
+          color: white
+          text-transform: uppercase
+          font-size: 14px
+          background-color: #0093EE
+          border-radius: 30px
+          padding: 10px 20px
+          transition: color 0.3s, background-color 0.3s, border 0.3s
+          &:hover
+            color: #0093EE
+            text-decoration: none
+            background-color: transparent
+
+      &-uraddress
+        margin-top: 10px
+        width: 100%
+        height: 100%
+        &-title
+          font-size: 18px
+          color: $black
+          font-weight: 500
+        .write-to-us
+          color: white
+          text-transform: uppercase
+          font-size: 14px
+          background-color: #0093EE
+          border-radius: 30px
+          padding: 10px 20px
+          transition: color 0.3s, background-color 0.3s, border 0.3s
+          &:hover
+            color: #0093EE
+            text-decoration: none
+            background-color: transparent
+
+  .contact-us
+    width: 100%
+    margin-top: 100px
+    &-title
+      font-size: 30px
+      color: $black
+      font-weight: 500
+      line-height: 40px
+    &-tagline
+      margin-top: 15px
+      font-size: 18px
+      color: $black
+      line-height: 25px
+      font-weight: 300
+      width: 100%
+  .projects
+    &-head
+      display: block
+      width: 100%
+      padding: 30px 0
+      &-title
+        position: absolute
+        width: 90%
+        z-index: 2
+        color: $black
+        h1
+          font-size: 60px
+          line-height: 72px
+        &-tagline
+          font-size: 20px
+          color: $black
+          line-height: 22px
+      &-svgbox
+        width: 200%
+        float: right
+        height: 65vh
+        position: relative
+        margin-top: -140px
+        z-index: 0
+    &-filter
+        width: 100%
+        padding-right: 0px
+    &-list
+      margin-top: 20px
+      width: 100%
+      padding-left: 0px
+      &-item
+        width: 100%
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 
@@ -1434,92 +1522,6 @@
           color: $black
         .active
           font-weight: bold
-
-  .our-office
-    position: relative
-    padding: 30px 0
-    background-color: $black
-    &-map
-      display: flex
-      position: relative
-      justify-content: center
-      #map
-        width: 100%
-        height: 532px
-    &-info
-      margin-top: -545px
-      position: relative
-      width: 100%
-      height: 100%
-      &-title
-        text-align: center
-        font-weight: 500
-        font-size: 35px
-        color: white
-      &-addresses
-        display: flex
-        margin-top: 60px
-        width: 100%
-        align-items: center
-        justify-content: center
-        align-content: center
-        flex-direction: column
-      &-address
-        text-align: center
-        order: 0
-        width: 100%
-
-        height: 140px
-        float: none
-        &-title
-          font-size: 36px
-          color: white
-          font-weight: 500
-        &-route
-          color: white
-          font-size: 16px
-        &-phone
-          color: white
-          margin-bottom: 15px
-          font-size: 16px
-        .write-to-us
-          color: white
-          display: none
-          text-transform: uppercase
-          font-size: 14px
-          background-color: #0093EE
-          border-radius: 30px
-          padding: 10px 20px
-          border: 1px solid #0093EE
-          transition: color 0.3s, background-color 0.3s, border 0.3s
-          &:hover
-            color: #0093EE
-            text-decoration: none
-            background-color: white
-            border: 1px solid #CCCBCB
-
-      &-uraddress
-        width: 100%
-        order: 1
-        text-align: center
-        margin-top: 30px
-        &-title
-          font-size: 16px
-          color: white
-        .write-to-us
-          color: white
-          text-transform: uppercase
-          font-size: 14px
-          background-color: #0093EE
-          border-radius: 30px
-          padding: 10px 20px
-          border: 1px solid #0093EE
-          transition: color 0.3s, background-color 0.3s, border 0.3s
-          &:hover
-            color: #0093EE
-            text-decoration: none
-            background-color: white
-            border: 1px solid #CCCBCB
 
   .production
     &-head
@@ -1805,6 +1807,85 @@
             line-height: 20px
             color: $black
             font-size: 14px
+  .our-office
+    position: relative
+    padding: 0px 0
+    padding-bottom: 90px
+    &-svgbox
+      z-index: 2
+      margin-top: -90px
+      margin-right: 0px
+      margin-left: -230px
+      height: 90vh
+      width: 180%
+      position: relative
+    &-info
+      position: absolute
+      z-index: 13
+      width: 89%
+      margin-top: 10px
+      height: 70vh
+      &-title
+        font-weight: 500
+        font-size: 60px
+        color: $black
+      &-addresses
+        display: flex
+        justify-content: space-between
+        align-items: center
+        align-content: center
+        width: 100%
+        flex-wrap: wrap
+        margin-top: 60px
+      &-address
+        width: 100%
+        height: 100%
+        &-title
+          font-size: 36px
+          color: $black
+          font-weight: 500
+        &-route
+          color: $black
+          font-size: 16px
+        &-phone
+          color: $black
+          margin-bottom: 15px
+          font-size: 16px
+        .write-to-us
+          float: left
+          color: white
+          text-transform: uppercase
+          font-size: 14px
+          background-color: #0093EE
+          border-radius: 30px
+          padding: 10px 20px
+          transition: color 0.3s, background-color 0.3s, border 0.3s
+          &:hover
+            color: #0093EE
+            text-decoration: none
+            background-color: transparent
+
+      &-uraddress
+        margin-top: 10px
+        width: 100%
+        height: 100%
+        &-title
+          font-size: 18px
+          color: $black
+          font-weight: 500
+        .write-to-us
+          color: white
+          text-transform: uppercase
+          font-size: 14px
+          background-color: #0093EE
+          border-radius: 30px
+          padding: 10px 20px
+          transition: color 0.3s, background-color 0.3s, border 0.3s
+          &:hover
+            color: #0093EE
+            text-decoration: none
+            background-color: transparent
+
 /*==========  Mobile First  ==========*/
 
 /* Custom, iPhone Retina */
