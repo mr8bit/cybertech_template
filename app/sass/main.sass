@@ -2300,5 +2300,49 @@ div.projects-filter-group._is-opened > .projects-filter-group__list
         width: 50%
         padding: 0 10px
 
+
+
+.support
+  padding: 150px 0
+  height: 500px
+  position: relative
+  &-svgbox
+    z-index: 2
+    margin-top: -460px
+    margin-left: 100px
+    position: relative
+  &-info
+    z-index: 4
+    position: absolute
+    width: 1170px
+    display: flex
+    height: 100%
+    flex-direction: column
+    align-content: space-between
+    &-tagline
+      &-main
+        width: 50%
+        height: 50%
+        &-title
+          font-size: 60px
+          color: #212121
+          width: 90%
+          line-height: 65px
+          padding: 0
+          margin: 0
+          font-weight: 500
+        &-description
+          margin-top: 30px
+          line-height: 24px
+          font-size: 20px
+          color: #212121
+          font-weight: 300
+    &-sub
+      &-phone
+        font-size: 20px
+        color: $black
+      &-email
+        font-size: 20px
+        color: #0093EE
 @import "media"
 // Всегда в конце
