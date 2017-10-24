@@ -2338,11 +2338,247 @@ div.projects-filter-group._is-opened > .projects-filter-group__list
           color: #212121
           font-weight: 300
     &-sub
+      margin-top: 20px
       &-phone
+        font-weight: 300
         font-size: 20px
         color: $black
+        &:hover
+          cursor: hand
+          color: black
       &-email
+        font-weight: 300
         font-size: 20px
         color: #0093EE
+  &-documentation
+    margin: 20px 0
+    width: 100%
+    &__title
+      font-size: 26px
+      color: $black
+      line-height: 36px
+    &-list
+      display: flex
+      margin-top: 64px
+      flex-direction: row
+      flex-wrap: wrap
+      &__link
+        width: 33.333333%
+      a
+        color: $black
+        &:hover
+          color: black
+      &-item
+        display: flex
+        flex-direction: column
+        justify-content: center
+        justify-items: center
+        align-items: center
+        align-content: center
+        width: 100%
+
+        &__title
+          font-size: 21px
+          font-size: $black
+  &-server
+    margin: 20px 0
+    width: 100%
+    &__title
+      font-size: 26px
+      color: $black
+      line-height: 36px
+    &-list
+      display: flex
+      margin-top: 64px
+      flex-direction: row
+      flex-wrap: wrap
+      &-item
+        padding:  0 15px
+        display: flex
+        flex-direction: column
+        text-align: center
+        width: 33.3333%
+        &__icon
+          font-size: 120px
+          font-size: $black
+        &__description
+          font-size: 16px
+          color: $black
+
+
+
+.documentation
+  &-searchbar
+    display: flex
+    justify-content: center
+    justify-items: center
+    width: 100%
+    margin: 80px 0
+    &-group
+      width: 70%
+      display: flex
+      flex-direction: row
+      align-items: center
+      input[type="text"]
+        font-size: 20px
+        width: 100%
+        height: 60px
+        padding: 5px 10px
+
+        border: solid 1px $black
+        &:focus, &:active
+          outline: none
+      button
+        font-size: 20px
+        margin-left: -50px
+        height: 30px
+        background: none
+        border: none
+        .mdi
+          line-height: 14px
+  &-breadhead
+    margin: 40px 0
+    span
+      color: #95989A
+      a
+        color: #95989A
+  &-list
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    &-item
+      width: calc(33% - 20px )
+      height: 180px
+      margin: 10px
+      background-color: #EAEAEC
+      padding: 20px
+      display: flex
+      color: $black
+      flex-direction: column
+      justify-content: space-between
+      align-content: space-between
+      transition: all 0.2s
+      &:nth-child(3n)
+        margin-left: 0px
+      &__icon
+        .mdi
+          font-size: 70px
+          line-height: 70px
+      &__title
+        font-size: 16px
+      &:hover
+        background-color: $black
+        color: white
+
+.functional
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  &-filter
+    width: 25%
+    padding-right: 15px
+    &-item
+      &-header
+        position: relative
+        text-align: justify
+        &__title
+          color: #161616
+          font-size: 22px
+          font-weight: 700
+          display: inline-block
+          margin: 0 5px 10px 0
+          line-height: 27px
+        .reset-hidden
+          display: none
+        &__reset-button
+          position: relative
+          top: -2px
+          right: 0
+          cursor: pointer
+          display: inline-block
+          box-sizing: border-box
+          margin-bottom: 7px
+          padding: 0 13px
+          height: 27px
+          border: 1px solid #696969
+          border-radius: 15px
+          color: #696969
+          font-size: 14px
+          line-height: 25px
+          white-space: nowrap
+          &-text
+            display: inline-block
+          &:hover
+            color: #1E6AFF
+            border-color: #1E6AFF
+        &::after
+          content: ''
+          width: 100%
+          display: inline-block
+          font-size: 0
+          line-height: 0
+    &-group
+      position: relative
+      &__title
+        color: #161616
+        font-size: 16px
+        font-weight: 500
+        line-height: 22px
+        overflow: hidden
+        cursor: pointer
+        user-select: none
+        margin: 0
+        padding: 10px 20px 5px 0
+        white-space: nowrap
+        text-overflow: ellipsis
+      &__icon
+        position: absolute
+        top: 10px
+        right: 5px
+      &__list
+        overflow: hidden
+        margin: 0
+        margin-bottom: 5px
+        padding: 0
+        height: 0
+        &__item
+          display: block
+          margin: 10px 0px
+          &__link
+            margin-left: 10px
+            font-weight: normal
+            color: #989B9D
+            font-size: 14px
+  &-content
+    width: 75%
+    padding: 10px
+    h1
+      padding: 0
+      margin: 0
+      font-size: 30px
+      line-height: 40px
+      margin-bottom: 40px
+    h2
+      font-size: 24px
+      line-height: 30px
+      margin-bottom: 20px
+    p
+      margin: 0
+      padding: 0
+    a
+      color: #1a3dc1
+      text-decoration: none
+      &:hover
+        color: #f00
+        text-decoration: none
+    img
+      height: auto
+      width: 90%
+      max-width: 90%
+
+
+div.functional-filter-group._is-opened > .functional-filter-group__list
+  height: auto
+  overflow: hidden
 @import "media"
 // Всегда в конце
