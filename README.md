@@ -25,11 +25,11 @@
 
   - Статья :white_check_mark: (адаптивность  :white_check_mark:)
  
-- Поддержка :white_check_mark: (адаптивность :x:)
+- Поддержка :white_check_mark: (адаптивность :white_check_mark:)
 
-  - Документация к продукту  :x: (адаптивность :x:)
+  - Документация к продукту  :white_check_mark: (адаптивность :white_check_mark:)
    
-   - Описание функции :x: (адаптивность :x:)
+   - Описание функции :white_check_mark: (адаптивность :white_check_mark:)
 
 - О нас  :white_check_mark: (адаптивность :white_check_mark:)
 
