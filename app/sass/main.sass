@@ -208,21 +208,29 @@ body
   display: flex
   flex-direction: row
   margin-top: 110px
+  flex-wrap: wrap
   justify-content: space-between
   &-item
-    display: flex
+    color: black
     width: 33.333%
-    flex-direction: row
-    &-description
+    &:hover
+      color: black
+      text-decoration: none
+    &-block
       display: flex
-      margin-left: 20px
-      flex-direction: column
-      &-title
-        font-size: 20px
-        font-weight: 500
-        color: $black
-      &-tagline
-        font-size: 14px
+      padding: 0 5px
+      width: 100%
+      flex-direction: row
+      &-description
+        display: flex
+        margin-left: 35px
+        flex-direction: column
+        &-title
+          font-size: 20px
+          font-weight: 500
+          color: $black
+        &-tagline
+          font-size: 14px
 
 .main-we-make
   width: 100%
@@ -2249,7 +2257,6 @@ div.projects-filter-group._is-opened > .projects-filter-group__list
           line-height: 21px
   &-slide-reverse
     flex-direction: row-reverse
-
   &-middle-slide
     &-list
       padding: 60px 0
@@ -2299,7 +2306,17 @@ div.projects-filter-group._is-opened > .projects-filter-group__list
       &-item
         width: 50%
         padding: 0 10px
-
+  &-form-complete
+    display: flex
+    justify-content: center
+    align-items: center
+    &-body
+      background-color: white
+      &-title
+        color: $black
+        font-size: 24px
+  &-form-copmplete-close
+    display: none
 
 
 .support
@@ -2444,8 +2461,9 @@ div.projects-filter-group._is-opened > .projects-filter-group__list
         color: #95989A
   &-list
     display: flex
-    justify-content: space-between
+    justify-content: flex-start
     flex-wrap: wrap
+
     &-item
       width: calc(33% - 20px )
       height: 180px
@@ -2457,14 +2475,22 @@ div.projects-filter-group._is-opened > .projects-filter-group__list
       flex-direction: column
       justify-content: space-between
       align-content: space-between
-      transition: all 0.2s
-      &__icon
-        .mdi
-          font-size: 70px
-          line-height: 70px
-      &__title
-        font-size: 16px
+      transition: all 0.2sbu
+      &-block
+        height: 180px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-content: space-between
+
+        &__icon
+          .mdi
+            font-size: 70px
+            line-height: 70px
+        &__title
+          font-size: 16px
       &:hover
+        text-decoration: none
         background-color: $black
         color: white
 
