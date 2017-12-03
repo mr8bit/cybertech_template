@@ -36,7 +36,7 @@
 
 </head>
 
-<body ng-app="landingApp">
+<body ng-app="exampleApp">
 
 <div id="individual_order" class="landing-formOrder">
     <div class="landing-formOrder-form">
@@ -616,7 +616,7 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container" ng-controller="MainCtrl">
     <div class="landing-order">
         <h3 class="landing-order-title">
             Закажите разработку прямо сейчас!
@@ -666,137 +666,110 @@
                 <div class="landing-order-works-checkout-price">
                     7 499 руб
                 </div>
-                <a onclick="showorderform()" href="" class="landing-order-works-checkout-order">
+                <a ng-click="clickToOpen()" class="landing-order-works-checkout-order">
                     ЗАКАЗАТЬ
                 </a>
             </div>
         </div>
     </div>
 </div>
-<!--
- <div class="container">
-    <div class="landing-template" ng-controller="TemplateListController">
-        <div class="landing-template-head">
-            <div class="landing-template-head-title">
-                <h4>Или выберите из готового</h4>
-                <div class="landing-template-head-title-help">Выберите решение, которое Вам нравится визуально.<br>
-                    Цвета, картинки и тексты — легко поменять под Ваш род деятельности.
+<script src="libs/angular/angular.min.js"></script>
+<script src="libs/jquery/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="css/main.min.css">
+<script src="libs/ng-dialog/js/ngDialog.min.js"></script>
+<link rel="stylesheet" href="libs/ng-dialog/css/ngDialog.css">
+<link rel="stylesheet" href="libs/ng-dialog/css/ngDialog-theme-default.min.css">
+<script type="text/ng-template" id="templateId">
+    <form class="landing-dialog-form-order">
+        <h3>Сделайте заказ</h3>
+        <div class="project-form-order-list">
+            <div class="project-form-order-list-item input-form">
+                <div class="input-control-100">
+                    <label>Имя</label>
+                    <input type="text">
+                </div>
+                <div class="input-control-100">
+                    <label>Email</label>
+                    <input type="text">
+                </div>
+                <div class="input-control-100">
+                    <label>Телефон</label>
+                    <input type="text">
+                </div>
+                <div class="input-control-100">
+                    <label>С каким продуктом вас интересует интеграция</label>
+                    <select type="text">
+                        <option>CyberLP</option>
+                        <option>CyberShop</option>
+                        <option>1</option>
+                    </select>
                 </div>
             </div>
-            <div class="landing-template-head-price">
-                2 499 руб
-            </div>
-        </div>
-        <div class="landing-template-body">
-            <div class="landing-template-body-sidebar">
-                <ul class="mainmenu">
+            <div class="project-form-order-list-item input-form">
+                <div class="input-control-100">
+                    <label>Комментарий/Расскажите нам еще немного</label>
+                    <textarea type="text" style="height: 213px"></textarea>
+                </div>
+                <div class="input-control-100">
+                    <label>Файл</label>
+                    <div class="file_input">
+                        <label style="opacity: 1">
 
+                            <input multiple class="inputfile" data-multiple-caption="{count} файла выбрано"
+                                   type="file">
+                            <span style="opacity: 1">Выберите файл</span>
 
-                    <li onclick="addClassByClick(this)">
-                        <span class="mdi mdi-chevron-right"></span>
-                        Строительство
-                        <ul class="submenu">
-                            <li>Автоматические ворота, двери, рольставни
-                            </li>
-                            <li>Алмазная резка, алмазное бурение</li>
-                            <li>Башенные краны</li>
-                            <li>Бетон, раствор</li>
-                            <li>Буровые работы</li>
-                            <li>Быстровозводимые здания и сооружения</li>
-                            <li>Витражи</li>
-                            <li>Гидроизоляционные материалы</li>
-                            <li>Гидроизоляционные работы
-                            </li>
-                            <li>Гидротехническое строительство
-                            </li>
-                            <li>Грязепоглощающие покрытия
-                            </li>
-                            <li>ДСП, ДВП, Фанера</li>
-                        </ul>
-                    </li>
-                    <li onclick="addClassByClick(this)">
-                        <span class="mdi mdi-chevron-right"></span>
-                        Деловые услуги
-                        <ul class="submenu">
-                            <li>Ремонт и реставрация мебели</li>
-                            <li>Мебель корпусная, изготовление мебели</li>
-                            <li>Магазины мебели и предметов интерьера</li>
-                        </ul>
-                    </li>
-                    <li onclick="addClassByClick(this)">
-                        <span class="mdi mdi-chevron-right"></span>
-                        Строительство
-                        <ul class="submenu">
-                            <li>Ремонт и реставрация мебели</li>
-                            <li>Мебель корпусная, изготовление мебели</li>
-                            <li>Магазины мебели и предметов интерьера</li>
-                        </ul>
-                    </li>
-                    <li onclick="addClassByClick(this)">
-                        <span class="mdi mdi-chevron-right"></span>
-                        Мебель
-                        <ul class="submenu">
-                            <li>Ремонт и реставрация мебели</li>
-                            <li>Мебель корпусная, изготовление мебели</li>
-                            <li>Магазины мебели и предметов интерьера</li>
-                        </ul>
-                    </li>
-
-
-                </ul>
-            </div>
-            <div class="landing-template-body-content">
-                <div class="landing-template-body-content-list">
-
-
-                    <div ng-repeat="item in items | limitTo: paginationLimit() "
-                         class="animated fadeIn landing-template-body-content-list-item">
-                        <div class="landing-template-body-content-list-item-title">
-                            <div class="landing-template-body-content-list-item-title-name">
-                                {{item.name}}
-                            </div>
-                            <div class="landing-template-body-content-list-item-title-id">
-                                #{{item.identy}}
-                            </div>
-                        </div>
-                        <div class="landing-template-body-content-list-item-image">
-                            <img ng-src="   {{item.image}}">
-                            <div class="landing-template-body-content-list-item-image-description">
-                                <div class="landing-template-body-content-list-item-image-description-left">
-                                    <div class="landing-template-body-content-list-item-image-description-left-price">
-                                        2499 руб.
-                                    </div>
-                                    <div class="landing-template-body-content-list-item-image-description-left-phone">
-                                        Адаптивный <span class="mdi mdi-cellphone-iphone"></span>
-                                    </div>
-                                </div>
-                                <div class="landing-template-body-content-list-item-image-description-right">
-                                    <div class="landing-template-body-content-list-item-image-description-right-get">
-                                        <a onclick="showtemplteorder(this)" href="">Заказать</a>
-                                    </div>
-                                    <div class="landing-template-body-content-list-item-image-description-right-view">
-                                        <a href="{{item.url}}">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </label>
                     </div>
-
-
-                    <button href="#" ng-show="hasMoreItemsToShow()" ng-click="showMoreItems()" style="width: 100%"
-                            class="landing-works-more">
-                        <span class="mdi mdi-cached"></span>
-                        <span class="landing-works-more-text">показать  ещё</span>
-                    </button>
-
-
                 </div>
+                <input class="input-send" type="submit" value="отправить">
+            </div>
+
+        </div>
+
+    </form>
+ <div class="project-form-complete animated project-form-copmplete-close">
+        <div class="project-form-complete-body">
+            <div class="project-form-complete-body-title">
+                Спасибо за заказ, мы скоро вам ответим.
             </div>
         </div>
     </div>
-</div>
--->
-<!--*******************Футер******************-->
+</script>
+<script>
+    var inputs = document.querySelectorAll('.inputfile');
+    Array.prototype.forEach.call(inputs, function (input) {
+        var label = input.nextElementSibling,
+            labelVal = label.innerHTML;
+        console.log(label);
+        input.addEventListener('change', function (e) {
+            var fileName = '';
+            if (this.files && this.files.length > 1)
+                fileName = ( this.getAttribute('data-multiple-caption') || '' ).replace('{count}', this.files.length);
+            else
+                fileName = e.target.value.split('\\').pop();
+
+            if (fileName)
+
+                label.innerHTML = fileName;
+            else
+                label.innerHTML = labelVal;
+        });
+    });
+</script>
+
+<script>
+    var app = angular.module('exampleApp', ['ngDialog']);
+
+    app.controller('MainCtrl', function ($scope, ngDialog) {
+        $scope.clickToOpen = function () {
+            ngDialog.open({
+                template: 'templateId',
+                width: '60%'
+            });
+        };
+    });
+</script>
 <footer>
     <div class="container">
         <div class="row footer">
@@ -845,229 +818,9 @@
         </div>
     </div>
 </footer>
-<script src="libs/wow/dist/wow.min.js"></script>
-<script>
-    var wow = new WOW(
-  {
-    boxClass:     'wow',      // animated element css class (default is wow)
-    animateClass: 'animated', // animation css class (default is animated)
-    offset:       300,          // distance to the element when triggering the animation (default is 0)
-    mobile:       false       // trigger animations on mobile devices (true is default)
-
-  }
-);
-wow.init();
-</script>
-<link rel="stylesheet" href="css/main.min.css">
 <link rel="stylesheet" href="libs/animate.css/animate.min.css">
-<script src="js/scripts.min.js"></script>
 <script src="libs/jquery/dist/jquery.min.js"></script>
-<script>
-    function showtemplteorder(button) {
-        var id = $(button).parent().parent().parent().parent().parent().children().find(".landing-template-body-content-list-item-title-id").text();
-        var name = $(button).parent().parent().parent().parent().parent().children().find(".landing-template-body-content-list-item-title-name").text();
-        $("#template_order").addClass("show-form");
-        $("body").addClass("body-stop")
-        document.getElementById("template_name_id").innerHTML = id + " " + name;
-    }
-    function closetemplateorder() {
-        $("#template_order").removeClass("show-form")
-        $("body").removeClass("body-stop")
-
-    }
-
-    function showorderform() {
-        $("#individual_order").addClass("show-form")
-        $("body").addClass("body-stop")
-    }
-
-    function closeorderform() {
-        $("#individual_order").removeClass("show-form")
-        $("body").removeClass("body-stop")
-
-    }
-
-    function addClassByClick(button) {
-        if ($(button).parent("ul").find('.active').length == 1) {
-            $(".mainmenu>li>span").removeClass("mdi-rotate-90");
-            $(button).parent("ul").find('.active')
-                .removeClass('active');
-        }
-        $(button).toggleClass("active");
-        $(button).children(".mdi").addClass("mdi-rotate-90");
-    }
-    $(document).ready(function () {
-        $(".landing-tagline-view").click(function () {
-            var elementClick = $(this).attr("href")
-            var destination = $(elementClick).offset().top;
-            jQuery("html:not(:animated),body:not(:animated)").animate({
-                scrollTop: destination
-            }, 800);
-            return false;
-        });
-    });
 
 
-</script>
-<script src="libs/angular/angular.min.js"></script>
-<script>
-    var target = document.querySelector('.landing-template-body-content-list-item');
-    var observer = new MutationObserver(function (mutations) {
-        mutations.forEach(function (mutation) {
-            console.log(mutation.type);
-        });
-    });
-
-    // создаем конфигурации для наблюдателя
-    var config = {attributes: true, childList: true, characterData: true};
-
-    // запускаем механизм наблюдения
-    observer.observe(target, config);
-
-    var app = angular.module('landingApp', []);
-    app.controller("TemplateListController", function TemplateListController($scope) {
-
-        var pagesShown = 1;
-
-        var pageSize = 4;
-
-        $scope.paginationLimit = function (data) {
-            return pageSize * pagesShown;
-        };
-
-        $scope.hasMoreItemsToShow = function () {
-            return pagesShown < ($scope.items.length / pageSize);
-        };
-
-        $scope.showMoreItems = function () {
-            pagesShown = pagesShown + 1;
-        };
-
-
-        $scope.items = [
-            {
-                name: "Юридические услуги",
-                identy: "1499",
-                url: "#",
-                image: "img/6446_5.jpg"
-
-            }, {
-                name: "Юридические услуги",
-                identy: "1499",
-                url: "#",
-                image: "img/6446_5.jpg"
-
-            }, {
-                name: "Юридические услуги",
-                identy: "1499",
-                url: "#",
-                image: "img/6446_5.jpg"
-
-            }, {
-                name: "Юридические услуги",
-                identy: "1499",
-                url: "#",
-                image: "img/6446_5.jpg"
-
-            }, {
-                name: "Юридические услуги",
-                identy: "1499",
-                url: "#",
-                image: "img/6446_5.jpg"
-
-            }, {
-                name: "Юридические услуги",
-                identy: "1499",
-                url: "#",
-                image: "img/6446_5.jpg"
-
-            }, {
-                name: "Юридические услуги",
-                identy: "1499",
-                url: "#",
-                image: "img/6446_5.jpg"
-
-            }, {
-                name: "Юридические услуги",
-                identy: "1499",
-                url: "#",
-                image: "img/6446_5.jpg"
-
-            }, {
-                name: "Юридические услуги",
-                identy: "1499",
-                url: "#",
-                image: "img/6446_5.jpg"
-
-            }, {
-                name: "Юридические услуги",
-                identy: "1499",
-                url: "#",
-                image: "img/6446_5.jpg"
-
-            }, {
-                name: "Юридические услуги",
-                identy: "1499",
-                url: "#",
-                image: "img/6446_5.jpg"
-
-            }, {
-                name: "Юридические услуги",
-                identy: "1499",
-                url: "#",
-                image: "img/6446_5.jpg"
-
-            }, {
-                name: "Юридические услуги",
-                identy: "1499",
-                url: "#",
-                image: "img/6446_5.jpg"
-
-            }, {
-                name: "Юридические услуги",
-                identy: "1499",
-                url: "#",
-                image: "img/6446_5.jpg"
-
-            }, {
-                name: "Юридические услуги",
-                identy: "1499",
-                url: "#",
-                image: "img/6446_5.jpg"
-
-            }, {
-                name: "Юридические услуги",
-                identy: "1499",
-                url: "#",
-                image: "img/6446_5.jpg"
-
-            }, {
-                name: "Юридические услуги",
-                identy: "1499",
-                url: "#",
-                image: "img/6446_5.jpg"
-
-            }, {
-                name: "Юридические услуги",
-                identy: "1499",
-                url: "#",
-                image: "img/6446_5.jpg"
-
-            }, {
-                name: "Юридические услуги",
-                identy: "1499",
-                url: "#",
-                image: "img/6446_5.jpg"
-
-            }, {
-                name: "Юридические услуги",
-                identy: "1499",
-                url: "#",
-                image: "img/6446_5.jpg"
-
-            },
-        ];
-    })
-</script>
 </body>
 </html>
